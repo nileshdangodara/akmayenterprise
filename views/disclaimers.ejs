@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pg-title">Legal | AKMAY Enterprise LLP</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" id="pg-canonical" href="https://akmayenterprise.in/disclaimer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { navy: '#08152A', navy2: '#0D1E38', gold: '#C5A059', gold2: '#E5D5B7', slate: '#F0F4F8', muted: '#8A9BB0' } }, fontFamily: { display: ['"Cormorant Garamond"', 'serif'], body: ['"DM Sans"', 'sans-serif'] } } } }
+    </script>
+
+    <style>
+        :root {
+            --navy: #08152A;
+            --navy2: #0D1E38;
+            --gold: #C5A059;
+            --gold2: #E5D5B7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+            opacity: .5;
+        }
+
+        /* Nav */
+        #topnav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: background .4s, border-color .4s, padding .3s;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid transparent;
+        }
+
+        #topnav.scrolled {
+            background: rgba(8, 21, 42, .94);
+            backdrop-filter: blur(20px);
+            border-bottom-color: rgba(197, 160, 89, .15);
+            padding: .75rem 0;
+        }
+
+        .nav-drop {
+            position: relative;
+        }
+
+        .nav-drop-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(8px);
+            min-width: 200px;
+            background: rgba(8, 21, 42, .97);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 160, 89, .2);
+            border-radius: 1rem;
+            padding: .5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .25s, transform .25s;
+        }
+
+        .nav-drop:hover .nav-drop-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #mobile-menu {
+            display: none;
+        }
+
+        #mob-toggle:checked~#mobile-menu {
+            display: block;
+        }
+
+        /* Core tokens */
+        .gold-text {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 45%, #C5A059 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gline {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold2) 60%, var(--gold) 80%, transparent);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .035);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(197, 160, 89, .18);
+        }
+
+        .sec-label {
+            font-size: .65rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: rgba(197, 160, 89, .6);
+            font-weight: 600;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 50%, #C5A059 100%);
+            background-size: 200% auto;
+            color: #08152A;
+            font-weight: 700;
+            transition: background-position .5s, transform .2s, box-shadow .3s;
+        }
+
+        .btn-gold:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(197, 160, 89, .3);
+        }
+
+        /* Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .65s ease, transform .65s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .reveal.up {
+            opacity: 1;
+            transform: none;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(28px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .ha1 {
+            animation: fadeUp .8s cubic-bezier(.23, 1, .32, 1) .1s both;
+        }
+
+        .ha2 {
+            animation: fadeUp .8s cubic-bezier(.23, 1, .32, 1) .22s both;
+        }
+
+        /* ── Page switcher tabs ── */
+        .page-tab {
+            padding: .55rem 1.4rem;
+            border-radius: 9999px;
+            font-size: .8rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid rgba(197, 160, 89, .2);
+            color: rgba(240, 244, 248, .45);
+            transition: all .25s;
+            background: transparent;
+            white-space: nowrap;
+        }
+
+        .page-tab:hover {
+            background: rgba(197, 160, 89, .08);
+            color: rgba(240, 244, 248, .75);
+        }
+
+        .page-tab.active {
+            background: rgba(197, 160, 89, .18);
+            border-color: rgba(197, 160, 89, .55);
+            color: #C5A059;
+        }
+
+        /* ── Table of Contents ── */
+        .toc-link {
+            display: block;
+            padding: .4rem .75rem;
+            border-left: 2px solid rgba(197, 160, 89, .12);
+            font-size: .78rem;
+            color: rgba(240, 244, 248, .45);
+            transition: all .2s;
+            text-decoration: none;
+            border-radius: 0 .4rem .4rem 0;
+        }
+
+        .toc-link:hover {
+            border-left-color: rgba(197, 160, 89, .5);
+            color: rgba(197, 160, 89, .9);
+            background: rgba(197, 160, 89, .05);
+        }
+
+        .toc-link.active {
+            border-left-color: #C5A059;
+            color: #C5A059;
+            background: rgba(197, 160, 89, .08);
+        }
+
+        /* ── Legal content ── */
+        .legal-section {
+            display: none;
+        }
+
+        .legal-section.active {
+            display: block;
+        }
+
+        .prose-akmay h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.65rem;
+            font-weight: 600;
+            color: #fff;
+            margin-top: 2.5rem;
+            margin-bottom: .75rem;
+            padding-bottom: .5rem;
+            border-bottom: 1px solid rgba(197, 160, 89, .12);
+            line-height: 1.25;
+        }
+
+        .prose-akmay h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(240, 244, 248, .85);
+            margin-top: 1.75rem;
+            margin-bottom: .5rem;
+        }
+
+        .prose-akmay p {
+            font-size: .875rem;
+            line-height: 1.75;
+            color: #8A9BB0;
+            margin-bottom: 1rem;
+        }
+
+        .prose-akmay ul {
+            margin-bottom: 1rem;
+            padding-left: 1.25rem;
+            list-style: none;
+        }
+
+        .prose-akmay ul li {
+            font-size: .875rem;
+            line-height: 1.75;
+            color: #8A9BB0;
+            margin-bottom: .4rem;
+            padding-left: .75rem;
+            position: relative;
+        }
+
+        .prose-akmay ul li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            font-size: .45rem;
+            color: rgba(197, 160, 89, .5);
+            top: .55rem;
+        }
+
+        .prose-akmay ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .prose-akmay ol li {
+            font-size: .875rem;
+            line-height: 1.75;
+            color: #8A9BB0;
+            margin-bottom: .4rem;
+        }
+
+        .prose-akmay strong {
+            color: rgba(240, 244, 248, .8);
+            font-weight: 600;
+        }
+
+        .prose-akmay a {
+            color: #C5A059;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            transition: color .2s;
+        }
+
+        .prose-akmay a:hover {
+            color: #E5D5B7;
+        }
+
+        .prose-akmay .highlight-box {
+            background: rgba(197, 160, 89, .06);
+            border: 1px solid rgba(197, 160, 89, .18);
+            border-radius: .875rem;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .prose-akmay .highlight-box p {
+            margin-bottom: 0;
+            color: rgba(240, 244, 248, .6);
+        }
+
+        .prose-akmay .warn-box {
+            background: rgba(248, 113, 113, .06);
+            border: 1px solid rgba(248, 113, 113, .2);
+            border-radius: .875rem;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .prose-akmay .warn-box p {
+            margin-bottom: 0;
+            color: rgba(248, 113, 113, .8);
+        }
+
+        /* ── Sticky TOC ── */
+        #toc-sidebar {
+            position: sticky;
+            top: 7rem;
+            max-height: calc(100vh - 8rem);
+            overflow-y: auto;
+        }
+
+        #toc-sidebar::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        #toc-sidebar::-webkit-scrollbar-thumb {
+            background: rgba(197, 160, 89, .3);
+            border-radius: 1px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--navy);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(197, 160, 89, .4);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="font-body text-brand-slate overflow-x-hidden" style="background:#08152A;">
+
+    <!-- ══════════ NAV ══════════ -->
+    <nav id="topnav" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="/images/logo.webp" alt="AKMAY Enterprise LLP" class="h-16 w-auto" />
+                    <span
+                        class="font-body font-semibold text-white text-base tracking-tight group-hover:text-brand-gold transition-colors">AKMAY
+                        Enterprise LLP</span>
+                </a>
+
+                <!-- Desktop links -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#about" class="au text-sm text-white/70 hover:text-white transition-colors">About</a>
+
+                    <div class="nav-drop">
+                        <button
+                            class="flex items-center gap-1 text-sm text-white/70 hover:text-white transition-colors py-2">
+                            Services <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div class="nav-drop-menu">
+                            <a href="/pre-ipo"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Pre-IPO
+                                Equity</a>
+                            <a href="/mutual-funds"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Mutual
+                                Funds</a>
+                            <a href="/unlisted-shares"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Unlisted
+                                Shares</a>
+                            <a href="/insurance"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Insurance</a>
+                            <a href="/physicaltodemat"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Physical
+                                to Demat</a>
+                            <a href="/fixed-deposits"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Fixed
+                                Deposits</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="au text-sm text-white/70 hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA + hamburger -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="/contact" class="btn-gold px-5 py-2.5 rounded-lg text-sm">Get Started</a>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="lg:hidden">
+                    <input id="mob-toggle" type="checkbox" class="hidden" />
+                    <label for="mob-toggle" class="cursor-pointer p-2 hover:bg-white/10 rounded-lg block">
+                        <span class="material-symbols-outlined text-white text-3xl">menu</span>
+                    </label>
+                    <div id="mobile-menu"
+                        class="absolute top-full left-0 w-full border-b border-brand-gold/15 py-4 shadow-2xl">
+                        <div class="flex flex-col gap-1 px-4">
+                            <a href="/"
+                                class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">About</a>
+                            <div>
+                                <input id="mob-svc" type="checkbox" class="hidden mob-drop-toggle" />
+                                <label for="mob-svc"
+                                    class="flex items-center justify-between py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl cursor-pointer text-sm">
+                                    Services <span
+                                        class="material-symbols-outlined di transition-transform">expand_more</span>
+                                </label>
+                                <div class="mob-drop-content pl-4 pb-2 space-y-1">
+                                    <a href="/pre-ipo"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Pre-IPO
+                                        Equity</a>
+                                    <a href="/mutual-funds"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Mutual
+                                        Funds</a>
+                                    <a href="/unlisted-shares"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Unlisted
+                                        Shares</a>
+                                    <a href="/insurance"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Insurance</a>
+                                    <a href="/physicaltodemat"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Physical to
+                                        Demat</a>
+                                    <a href="/fixed-deposits"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Fixed
+                                        Deposits</a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="/contact"
+                                    class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">Contact</a>
+                            </div>
+
+                            <a href="/contact" class="block mt-2 btn-gold py-3 px-4 rounded-xl text-sm text-center">Get
+                                Started →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section class="relative overflow-hidden pt-32 pb-12"
+        style="background:radial-gradient(ellipse 70% 50% at 60% 25%,rgba(197,160,89,.07) 0%,transparent 60%),linear-gradient(155deg,#08152A 0%,#0D1E38 55%,#08152A 100%);">
+        <div class="absolute inset-0 pointer-events-none opacity-[0.028]"
+            style="background-image:linear-gradient(rgba(197,160,89,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(197,160,89,.6) 1px,transparent 1px);background-size:80px 80px;">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Breadcrumb -->
+            <nav aria-label="Breadcrumb" class="mb-8 ha1">
+                <ol class="flex items-center gap-2 text-xs text-white/30">
+                    <li><a href="index.html" class="hover:text-brand-gold transition-colors">Home</a></li>
+                    <li><span class="material-symbols-outlined text-xs">chevron_right</span></li>
+                    <li class="text-brand-gold" id="bc-current">Legal</li>
+                </ol>
+            </nav>
+
+            <div class="max-w-2xl">
+                <div class="ha1">
+                    <span
+                        class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full border border-brand-gold/30 bg-brand-gold/8 text-brand-gold mb-7">
+                        <span class="material-symbols-outlined text-sm">gavel</span>
+                        Legal Documentation
+                    </span>
+                </div>
+                <h1 id="pg-heading" class="font-display ha2"
+                    style="font-size:clamp(2.6rem,5vw,4.2rem);line-height:1.05;color:#fff;margin-bottom:1rem;">
+                    <span class="gold-text">Disclaimer</span>
+                </h1>
+                <p id="pg-subline" class="text-brand-muted text-sm leading-relaxed ha2 max-w-lg">Please read this
+                    disclaimer carefully before using AKMAY Enterprise LLP's website or services.</p>
+                <p class="text-white/25 text-xs mt-4 ha2">Last updated: <span class="text-brand-gold/60">April
+                        2026</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════ PAGE SWITCHER ══════════ -->
+    <div class="border-y border-brand-gold/10 py-4" style="background:var(--navy2);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex gap-2 overflow-x-auto pb-1">
+                <button class="page-tab active" data-page="disclaimer" onclick="switchPage('disclaimer')">
+                    <span class="material-symbols-outlined text-sm mr-1.5"
+                        style="vertical-align:-3px">warning</span>Disclaimer
+                </button>
+                <button class="page-tab" data-page="privacy" onclick="switchPage('privacy')">
+                    <span class="material-symbols-outlined text-sm mr-1.5"
+                        style="vertical-align:-3px">lock</span>Privacy Policy
+                </button>
+                <button class="page-tab" data-page="terms" onclick="switchPage('terms')">
+                    <span class="material-symbols-outlined text-sm mr-1.5"
+                        style="vertical-align:-3px">description</span>Terms of Service
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════ MAIN CONTENT ══════════ -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid lg:grid-cols-4 gap-12 items-start">
+
+            <!-- Sticky TOC -->
+            <div class="lg:col-span-1 hidden lg:block" id="toc-sidebar">
+                <p class="sec-label mb-5">Contents</p>
+                <nav id="toc-nav" class="space-y-1"></nav>
+
+                <!-- Quick links to other pages -->
+                <div class="mt-10 pt-8 border-t border-brand-gold/12">
+                    <p class="sec-label mb-4">Also See</p>
+                    <div class="space-y-2">
+                        <button onclick="switchPage('disclaimer')" id="side-disclaimer"
+                            class="toc-link w-full text-left flex items-center gap-2"><span
+                                class="material-symbols-outlined text-xs">warning</span>Disclaimer</button>
+                        <button onclick="switchPage('privacy')" id="side-privacy"
+                            class="toc-link w-full text-left flex items-center gap-2"><span
+                                class="material-symbols-outlined text-xs">lock</span>Privacy Policy</button>
+                        <button onclick="switchPage('terms')" id="side-terms"
+                            class="toc-link w-full text-left flex items-center gap-2"><span
+                                class="material-symbols-outlined text-xs">description</span>Terms of Service</button>
+                    </div>
+                </div>
+
+                <!-- Contact block -->
+                <div class="mt-8 glass rounded-xl p-5">
+                    <p class="text-white/50 text-xs leading-relaxed mb-3">Questions about our legal policies?</p>
+                    <a href="contact.html"
+                        class="btn-gold w-full py-2.5 rounded-lg text-xs flex items-center justify-center gap-1.5 group">
+                        Contact Us <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Content area -->
+            <div class="lg:col-span-3">
+
+                <!-- ══ DISCLAIMER ══ -->
+                <article class="legal-section active prose-akmay reveal" id="sec-disclaimer">
+
+                    <div class="highlight-box">
+                        <p><strong>Summary:</strong> AKMAY Enterprise LLP provides financial information and advisory
+                            services for general informational purposes only. Nothing on this website constitutes
+                            financial advice, and all investment decisions remain solely the responsibility of the
+                            investor.</p>
+                    </div>
+
+                    <h2 id="d-general">General Disclaimer</h2>
+                    <p>The information contained on this website (<strong>akmayenterprise.in</strong>) and any related
+                        communications, documents, or materials provided by AKMAY Enterprise LLP ("AKMAY", "we", "us",
+                        "our") is for general informational and educational purposes only. It is not intended as
+                        financial, investment, legal, or tax advice.</p>
+                    <p>AKMAY Enterprise LLP is a financial advisory and distribution firm. We facilitate investment
+                        transactions through SEBI-registered brokers, Depository Participants, and AMFI-registered
+                        mutual fund distributors. We are not a SEBI-registered Investment Adviser (IA) under SEBI
+                        (Investment Advisers) Regulations, 2013.</p>
+
+                    <h2 id="d-investment">Investment Risk Disclaimer</h2>
+                    <div class="warn-box">
+                        <p><strong>⚠ Risk Warning:</strong> Investments in securities, mutual funds, Pre-IPO equity,
+                            unlisted shares, and fixed deposits involve market risk. You may lose part or all of your
+                            invested capital. Past performance is not indicative of future results.</p>
+                    </div>
+                    <p>Specifically, you should be aware of the following risks:</p>
+                    <ul>
+                        <li><strong>Equity & Pre-IPO:</strong> Prices of unlisted and Pre-IPO shares are highly volatile
+                            and may result in complete capital loss. Liquidity may be limited and exit may not be
+                            possible at desired prices or timelines.</li>
+                        <li><strong>Mutual Funds:</strong> Mutual fund investments are subject to market risks. The NAV
+                            of schemes may go up or down based on factors and forces affecting securities markets. There
+                            is no guarantee or assurance of returns.</li>
+                        <li><strong>Fixed Deposits:</strong> Corporate and NBFC FDs are not covered by DICGC insurance.
+                            Credit risk of the issuing entity applies.</li>
+                        <li><strong>Insurance Products:</strong> Insurance products are subject to the terms,
+                            conditions, and exclusions of the respective policy document. AKMAY acts only as a
+                            facilitator, not as an insurer.</li>
+                        <li><strong>Unlisted Shares:</strong> Investments in unlisted securities are illiquid,
+                            speculative, and involve high risk of loss. Prices are indicative and may differ from actual
+                            transaction prices.</li>
+                    </ul>
+
+                    <h2 id="d-accuracy">Accuracy of Information</h2>
+                    <p>While AKMAY Enterprise LLP makes every effort to ensure that the information on this website is
+                        accurate and up-to-date, we make no representations or warranties — express or implied — as to
+                        the accuracy, completeness, reliability, suitability, or availability of any information,
+                        products, services, or related graphics on this website.</p>
+                    <p>Price data for unlisted shares and Pre-IPO opportunities is indicative and updated periodically.
+                        Actual transaction prices may vary. All return figures shown are historical and should not be
+                        treated as a guarantee of future performance.</p>
+
+                    <h2 id="d-no-advice">No Investment Advice</h2>
+                    <p>Nothing on this website should be construed as investment advice, a solicitation, or an offer to
+                        buy or sell any security. We strongly recommend that all prospective investors:</p>
+                    <ul>
+                        <li>Conduct their own independent research and due diligence before making any investment
+                            decision</li>
+                        <li>Consult with a SEBI-registered Investment Adviser, Chartered Accountant, or other qualified
+                            financial professional</li>
+                        <li>Carefully read all offer documents, scheme information documents, and risk disclosures
+                            before investing</li>
+                        <li>Assess their own financial situation, risk tolerance, and investment objectives</li>
+                    </ul>
+
+                    <h2 id="d-regulatory">Regulatory Compliance</h2>
+                    <p>AKMAY Enterprise LLP operates in accordance with applicable Indian laws and SEBI regulations. All
+                        transactions facilitated by us are conducted through SEBI-registered entities. We comply with
+                        PMLA (Prevention of Money Laundering Act) requirements and conduct KYC (Know Your Customer)
+                        verification for all clients.</p>
+                    <p>AMFI Registration: Applicable for mutual fund distribution. SEBI Registration: Transactions
+                        facilitated through registered brokers. IRDAI: Insurance products distributed through registered
+                        intermediaries.</p>
+
+                    <h2 id="d-third-party">Third-Party Links & Information</h2>
+                    <p>This website may contain links to third-party websites or reference information from third-party
+                        sources. AKMAY Enterprise LLP does not endorse, control, or take responsibility for the content,
+                        privacy practices, or accuracy of any third-party website or information source.</p>
+
+                    <h2 id="d-liability">Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by law, AKMAY Enterprise LLP, its partners, employees, and
+                        affiliates shall not be liable for any direct, indirect, incidental, consequential, or punitive
+                        damages arising from your use of this website or reliance on any information provided herein,
+                        including but not limited to investment losses, loss of profits, or data loss.</p>
+
+                    <h2 id="d-changes">Changes to This Disclaimer</h2>
+                    <p>We reserve the right to modify this disclaimer at any time. Changes will be effective immediately
+                        upon posting to this website. Your continued use of this website following any changes
+                        constitutes your acceptance of the revised disclaimer.</p>
+                    <p>For questions regarding this disclaimer, please contact us at <a
+                            href="mailto:legal@akmayenterprise.in">legal@akmayenterprise.in</a>.</p>
+
+                </article>
+
+                <!-- ══ PRIVACY POLICY ══ -->
+                <article class="legal-section prose-akmay reveal" id="sec-privacy">
+
+                    <div class="highlight-box">
+                        <p><strong>Summary:</strong> AKMAY Enterprise LLP collects limited personal information
+                            necessary to provide our financial advisory services. We do not sell your data to third
+                            parties. We implement industry-standard security measures to protect your information.</p>
+                    </div>
+
+                    <h2 id="p-intro">Introduction</h2>
+                    <p>AKMAY Enterprise LLP ("AKMAY", "we", "us", "our") is committed to protecting your privacy. This
+                        Privacy Policy explains how we collect, use, disclose, and safeguard your personal information
+                        when you visit our website <strong>akmayenterprise.in</strong> or use our financial advisory
+                        services.</p>
+                    <p>By using our website or services, you consent to the data practices described in this policy. If
+                        you do not agree, please discontinue use of our services.</p>
+
+                    <h2 id="p-collect">Information We Collect</h2>
+                    <h3>Personal Information You Provide</h3>
+                    <p>When you use our services, submit enquiry forms, or communicate with us, we may collect:</p>
+                    <ul>
+                        <li><strong>Identity Information:</strong> Full name, date of birth, PAN number, Aadhaar number
+                            (for KYC compliance)</li>
+                        <li><strong>Contact Information:</strong> Email address, phone number, postal address</li>
+                        <li><strong>Financial Information:</strong> Bank account details, Demat account details (DP ID,
+                            Client ID), investment preferences, income range</li>
+                        <li><strong>Communication Data:</strong> Messages, enquiries, feedback, and correspondence with
+                            our team</li>
+                        <li><strong>KYC Documents:</strong> PAN card, Aadhaar, passport, cancelled cheque, Client Master
+                            Report (CMR) as required by SEBI/AMFI/IRDAI regulations</li>
+                    </ul>
+
+                    <h3>Information Collected Automatically</h3>
+                    <p>When you visit our website, we may automatically collect:</p>
+                    <ul>
+                        <li>IP address, browser type, device type and operating system</li>
+                        <li>Pages visited, time spent, referring URLs</li>
+                        <li>Cookies and similar tracking technologies (see our Cookie section below)</li>
+                    </ul>
+
+                    <h2 id="p-use">How We Use Your Information</h2>
+                    <p>We use your personal information for the following purposes:</p>
+                    <ul>
+                        <li><strong>Service Delivery:</strong> To process investment transactions, facilitate buy/sell
+                            orders, and complete KYC verification as required by regulatory authorities</li>
+                        <li><strong>Advisory Communications:</strong> To provide personalised investment
+                            recommendations, portfolio updates, and market insights</li>
+                        <li><strong>Legal & Regulatory Compliance:</strong> To comply with SEBI, AMFI, IRDAI, PMLA, and
+                            other applicable regulations including record-keeping requirements</li>
+                        <li><strong>Customer Support:</strong> To respond to your enquiries, resolve complaints, and
+                            improve our services</li>
+                        <li><strong>Marketing:</strong> To send you relevant information about our services, market
+                            research, and newsletters (with your consent, and you may opt out at any time)</li>
+                        <li><strong>Security:</strong> To detect, prevent, and address fraud, security incidents, and
+                            other harmful activities</li>
+                    </ul>
+
+                    <h2 id="p-share">Information Sharing & Disclosure</h2>
+                    <div class="warn-box">
+                        <p><strong>We do not sell your personal information to third parties.</strong></p>
+                    </div>
+                    <p>We may share your information in the following limited circumstances:</p>
+                    <ul>
+                        <li><strong>SEBI-Registered Brokers & DPs:</strong> To facilitate investment transactions on
+                            your behalf as instructed by you</li>
+                        <li><strong>AMCs & RTAs:</strong> For mutual fund transactions, folios, and portfolio statements
+                        </li>
+                        <li><strong>Insurance Companies & Intermediaries:</strong> For processing insurance applications
+                            and claims</li>
+                        <li><strong>Regulatory Authorities:</strong> SEBI, AMFI, IRDAI, income tax authorities, and
+                            financial intelligence units as required by law</li>
+                        <li><strong>Service Providers:</strong> IT service providers, data analytics providers, and
+                            communication platforms under strict confidentiality obligations</li>
+                        <li><strong>Legal Requirements:</strong> When required by court order, law enforcement, or other
+                            legal processes</li>
+                    </ul>
+
+                    <h2 id="p-security">Data Security</h2>
+                    <p>We implement industry-standard technical and organisational security measures to protect your
+                        personal information from unauthorised access, disclosure, alteration, or destruction. These
+                        measures include:</p>
+                    <ul>
+                        <li>SSL/TLS encryption for all data transmitted to and from our website</li>
+                        <li>Restricted access to personal data on a need-to-know basis</li>
+                        <li>Regular security assessments and employee data privacy training</li>
+                        <li>Secure storage of KYC documents in compliance with regulatory requirements</li>
+                    </ul>
+                    <p>While we take every precaution, no method of electronic transmission or storage is 100% secure.
+                        We cannot guarantee absolute security of your data.</p>
+
+                    <h2 id="p-retention">Data Retention</h2>
+                    <p>We retain your personal information for as long as necessary to:</p>
+                    <ul>
+                        <li>Provide our services to you</li>
+                        <li>Comply with legal and regulatory obligations (SEBI requires minimum 5-year retention of
+                            client records)</li>
+                        <li>Resolve disputes and enforce our agreements</li>
+                    </ul>
+                    <p>KYC documents are retained for a minimum of 5 years after the end of the business relationship,
+                        as required by PMLA regulations.</p>
+
+                    <h2 id="p-rights">Your Rights</h2>
+                    <p>Subject to applicable law, you have the following rights regarding your personal data:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+                        <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                        <li><strong>Deletion:</strong> Request deletion of your personal data (subject to legal and
+                            regulatory retention requirements)</li>
+                        <li><strong>Opt-Out:</strong> Unsubscribe from marketing communications at any time via the
+                            unsubscribe link in our emails</li>
+                        <li><strong>Grievance:</strong> Lodge a complaint with our Grievance Officer (details below)
+                        </li>
+                    </ul>
+
+                    <h2 id="p-cookies">Cookies Policy</h2>
+                    <p>Our website uses cookies and similar technologies to enhance your experience. We use:</p>
+                    <ul>
+                        <li><strong>Essential Cookies:</strong> Necessary for the website to function correctly</li>
+                        <li><strong>Analytics Cookies:</strong> To understand how visitors interact with our website
+                            (e.g., Google Analytics)</li>
+                        <li><strong>Preference Cookies:</strong> To remember your settings and preferences</li>
+                    </ul>
+                    <p>You can control cookie settings through your browser. Disabling cookies may affect some website
+                        functionality.</p>
+
+                    <h2 id="p-children">Children's Privacy</h2>
+                    <p>Our services are not directed to individuals under 18 years of age. We do not knowingly collect
+                        personal information from minors. If you believe we have inadvertently collected information
+                        from a minor, please contact us immediately.</p>
+
+                    <h2 id="p-grievance">Grievance Officer</h2>
+                    <div class="highlight-box">
+                        <p><strong>Grievance Officer:</strong> Akshay Vijay Gole<br />
+                            <strong>AKMAY Enterprise LLP</strong><br />
+                            Email: <a href="mailto:grievance@akmayenterprise.in">grievance@akmayenterprise.in</a><br />
+                            Response time: Within 30 days of receipt of complaint
+                        </p>
+                    </div>
+
+                    <h2 id="p-changes">Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy periodically to reflect changes in our practices or applicable
+                        law. We will notify you of material changes by posting the updated policy on this page with a
+                        revised "Last Updated" date. Your continued use of our services after changes constitutes
+                        acceptance of the updated policy.</p>
+
+                </article>
+
+                <!-- ══ TERMS OF SERVICE ══ -->
+                <article class="legal-section prose-akmay reveal" id="sec-terms">
+
+                    <div class="highlight-box">
+                        <p><strong>Summary:</strong> By using AKMAY Enterprise LLP's website and services, you agree to
+                            these terms. We provide financial advisory and distribution services. You are responsible
+                            for your own investment decisions. Disputes are governed by Indian law.</p>
+                    </div>
+
+                    <h2 id="t-acceptance">Acceptance of Terms</h2>
+                    <p>By accessing or using the website <strong>akmayenterprise.in</strong> or any services provided by
+                        AKMAY Enterprise LLP ("AKMAY", "we", "us", "our"), you agree to be bound by these Terms of
+                        Service ("Terms") and all applicable laws and regulations. If you do not agree to these Terms,
+                        please discontinue use immediately.</p>
+                    <p>These Terms constitute a legally binding agreement between you ("User", "Client", "you") and
+                        AKMAY Enterprise LLP, a Limited Liability Partnership registered in India.</p>
+
+                    <h2 id="t-services">Description of Services</h2>
+                    <p>AKMAY Enterprise LLP provides the following financial advisory and distribution services:</p>
+                    <ul>
+                        <li><strong>Pre-IPO & Unlisted Share Advisory:</strong> Identification, due diligence, and
+                            facilitation of Pre-IPO and unlisted equity transactions through SEBI-registered entities
+                        </li>
+                        <li><strong>Mutual Fund Distribution:</strong> Distribution of mutual fund schemes of
+                            SEBI-registered Asset Management Companies through AMFI-registered channels</li>
+                        <li><strong>Fixed Deposit Advisory:</strong> Advisory and facilitation of Corporate and NBFC
+                            Fixed Deposit investments</li>
+                        <li><strong>Insurance Advisory:</strong> Distribution of life, health, and general insurance
+                            products through IRDAI-registered intermediaries</li>
+                        <li><strong>Physical to Demat:</strong> Advisory and facilitation for dematerialisation of
+                            physical share certificates through SEBI-registered Depository Participants</li>
+                    </ul>
+                    <p>AKMAY reserves the right to modify, suspend, or discontinue any service at any time without prior
+                        notice.</p>
+
+                    <h2 id="t-eligibility">User Eligibility</h2>
+                    <p>To use our services, you must:</p>
+                    <ul>
+                        <li>Be at least 18 years of age and legally competent to enter into contracts under Indian law
+                        </li>
+                        <li>Be a citizen or legal resident of India with a valid PAN card</li>
+                        <li>Have a valid Demat account with a SEBI-registered Depository Participant (for equity
+                            investments)</li>
+                        <li>Complete KYC verification as required by applicable regulations</li>
+                        <li>Provide accurate, complete, and current information</li>
+                    </ul>
+
+                    <h2 id="t-kyc">KYC & Regulatory Obligations</h2>
+                    <p>In compliance with SEBI regulations and the Prevention of Money Laundering Act (PMLA) 2002, AKMAY
+                        is required to verify the identity of all clients. You agree to:</p>
+                    <ul>
+                        <li>Provide valid KYC documents as requested (PAN, Aadhaar, address proof, bank details, CMR)
+                        </li>
+                        <li>Ensure all information provided is accurate and up-to-date</li>
+                        <li>Promptly notify AKMAY of any changes to your personal information, financial status, or
+                            investment objectives</li>
+                        <li>Comply with all applicable Indian tax laws, including disclosing capital gains in your
+                            Income Tax Return</li>
+                    </ul>
+
+                    <h2 id="t-transactions">Transaction Terms</h2>
+                    <h3>Pre-IPO & Unlisted Shares</h3>
+                    <ul>
+                        <li>All quoted prices are indicative. Final transaction price is confirmed at the time of
+                            booking</li>
+                        <li>Payment must be made via RTGS/NEFT/IMPS only. Cash transactions are strictly not accepted
+                        </li>
+                        <li>Shares will be credited to your Demat account within T+2 working days after payment
+                            realisation</li>
+                        <li>AKMAY does not guarantee liquidity or a minimum return on any unlisted security</li>
+                        <li>Once a transaction is confirmed and funds transferred, cancellation is at AKMAY's discretion
+                        </li>
+                    </ul>
+                    <h3>Mutual Funds</h3>
+                    <ul>
+                        <li>Mutual fund transactions are processed at applicable NAV as per SEBI regulations</li>
+                        <li>Cut-off timings for same-day NAV applicability are as per the scheme's offer document</li>
+                        <li>AKMAY earns distributor commission from AMCs on regular plan investments. Direct plan
+                            investments involve no commission</li>
+                    </ul>
+
+                    <h2 id="t-fees">Fees & Charges</h2>
+                    <p>AKMAY Enterprise LLP's fee structure is as follows:</p>
+                    <ul>
+                        <li><strong>Advisory Fee:</strong> Charged on case-by-case basis, disclosed upfront before any
+                            transaction</li>
+                        <li><strong>Mutual Fund Distribution:</strong> Trail commission earned from AMC; disclosed in
+                            accordance with AMFI guidelines</li>
+                        <li><strong>Insurance Distribution:</strong> Commission paid by insurer; disclosed as per IRDAI
+                            norms</li>
+                        <li><strong>Physical to Demat:</strong> Advisory fee plus DP processing charges (₹25–₹50 per
+                            certificate plus taxes)</li>
+                    </ul>
+                    <p>All fees are inclusive of applicable GST unless stated otherwise. AKMAY reserves the right to
+                        revise its fee structure with reasonable prior notice.</p>
+
+                    <h2 id="t-intellectual">Intellectual Property</h2>
+                    <p>All content on this website — including but not limited to text, graphics, logos, icons, images,
+                        research reports, and software — is the intellectual property of AKMAY Enterprise LLP or its
+                        licensors and is protected by applicable Indian and international copyright laws.</p>
+                    <p>You may not reproduce, distribute, modify, or create derivative works from any content on this
+                        website without our prior written consent. Personal, non-commercial use of website content is
+                        permitted provided attribution is given.</p>
+
+                    <h2 id="t-prohibited">Prohibited Conduct</h2>
+                    <p>You agree not to use our website or services to:</p>
+                    <ul>
+                        <li>Provide false, misleading, or fraudulent information</li>
+                        <li>Conduct money laundering, terrorist financing, or any other illegal financial activity</li>
+                        <li>Engage in market manipulation or insider trading</li>
+                        <li>Interfere with the security or integrity of our website or systems</li>
+                        <li>Scrape, crawl, or systematically extract data from our website without permission</li>
+                        <li>Impersonate AKMAY or any of its employees or affiliates</li>
+                    </ul>
+
+                    <h2 id="t-liability">Limitation of Liability</h2>
+                    <p>To the maximum extent permitted by applicable law, AKMAY Enterprise LLP shall not be liable for:
+                    </p>
+                    <ul>
+                        <li>Investment losses arising from market fluctuations, company performance, or regulatory
+                            changes</li>
+                        <li>Delays in transaction processing caused by third-party entities (brokers, DPs, RTAs, AMCs)
+                        </li>
+                        <li>Technical failures, system outages, or interruptions to the website</li>
+                        <li>Any indirect, consequential, special, or punitive damages</li>
+                        <li>Actions taken by regulatory authorities affecting your investments</li>
+                    </ul>
+                    <p>AKMAY's total aggregate liability to any user shall not exceed the fees actually paid by that
+                        user to AKMAY in the 12 months preceding the event giving rise to the claim.</p>
+
+                    <h2 id="t-indemnification">Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless AKMAY Enterprise LLP and its partners,
+                        employees, and agents from any claims, losses, damages, liabilities, costs, or expenses
+                        (including legal fees) arising from your breach of these Terms, your use of our services, or
+                        your violation of any applicable law.</p>
+
+                    <h2 id="t-dispute">Dispute Resolution & Governing Law</h2>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of India. Any disputes
+                        arising out of or in connection with these Terms shall first be attempted to be resolved through
+                        good-faith negotiation.</p>
+                    <p>If not resolved within 30 days, disputes shall be referred to arbitration in accordance with the
+                        Arbitration and Conciliation Act, 1996, with a single arbitrator appointed by mutual agreement.
+                        The seat of arbitration shall be Mumbai, Maharashtra, India.</p>
+                    <p>For regulatory disputes related to securities transactions, you may also approach SEBI's SCORES
+                        (SEBI Complaint Redressal System) or the relevant stock exchange's investor grievance cell.</p>
+
+                    <h2 id="t-termination">Termination</h2>
+                    <p>AKMAY reserves the right to terminate or suspend your access to our services at any time, with or
+                        without cause, including for violation of these Terms, non-compliance with KYC requirements, or
+                        fraudulent activity. Termination does not affect any rights or obligations that arose prior to
+                        termination.</p>
+
+                    <h2 id="t-changes">Changes to Terms</h2>
+                    <p>We may update these Terms from time to time. Material changes will be communicated by posting a
+                        notice on our website. Your continued use of our services after the effective date of changes
+                        constitutes acceptance of the revised Terms. We recommend reviewing these Terms periodically.
+                    </p>
+
+                    <div class="highlight-box mt-8">
+                        <p><strong>Contact for Legal Matters:</strong><br />
+                            AKMAY Enterprise LLP<br />
+                            Email: <a href="mailto:legal@akmayenterprise.in">legal@akmayenterprise.in</a><br />
+                            For grievances, contact our Grievance Officer at <a
+                                href="mailto:grievance@akmayenterprise.in">grievance@akmayenterprise.in</a></p>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer class="bg-brand-navy pt-20 pb-10 border-t border-brand-gold/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="/images/logo.webp" alt="AKMAY Logo" class="h-20" />
+                        <span class="text-white font-semibold">AKMAY Enterprise LLP</span>
+                    </div>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                        Institutional-grade investment advisory for discerning investors. Expertise, integrity,
+                        strategic growth.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" aria-label="Share"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">share</span>
+                        </a>
+                        <a href="mailto:nilesh1321910@gmail.com" aria-label="Contact"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Solutions</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="/pre-ipo" class="hover:text-white transition-colors">Pre-IPO Equity</a></li>
+                        <li><a href="/mutual-funds" class="hover:text-white transition-colors">Mutual Funds</a></li>
+                        <li><a href="/unlisted-shares" class="hover:text-white transition-colors">Unlisted Shares</a>
+                        </li>
+                        <li><a href="/insurance" class="hover:text-white transition-colors">Insurance Advisory</a></li>
+                        <li><a href="/fixed-deposits" class="hover:text-white transition-colors">Fixed Deposits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Services</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="/physicaltodemat" class="hover:text-white transition-colors">Physical to Demat</a>
+                        </li>
+                        <li><a href="/mutual-funds" class="hover:text-white transition-colors">SIP Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Stay Informed</h3>
+                    <p class="text-brand-muted text-sm mb-5 leading-relaxed">Weekly market intelligence and exclusive
+                        unlisted opportunities.</p>
+                    <div class="flex flex-col gap-3">
+                        <input type="email" id="subscriber-email" placeholder="your@email.com"
+                            class="w-full bg-white/5 border border-brand-gold/20 rounded-lg py-2.5 px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-brand-gold transition-colors" />
+                        <button id="subscribe-btn"
+                            class="btn-gold py-2.5 rounded-lg text-sm font-bold w-full disabled:opacity-50 disabled:cursor-not-allowed">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gline mb-8"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/20">© 2025 AKMAY Enterprise LLP. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-5 text-xs text-white/20">
+                    <button onclick="switchPage('privacy')" class="hover:text-brand-gold transition-colors">Privacy Policy</button>
+                    <button onclick="switchPage('terms')" class="hover:text-brand-gold transition-colors">Terms of Service</button>
+                    <button onclick="switchPage('disclaimer')" class="hover:text-brand-gold transition-colors">Disclaimer</button>
+                    <a href="/contact" class="hover:text-brand-gold transition-colors">Contact Us</a>
+                </div>
+            </div>
+
+            <p class="text-xs text-white/15 mt-6 text-center max-w-2xl mx-auto leading-relaxed">
+                Investment in securities market is subject to market risks. Read all the related documents carefully
+                before investing. Past performance is not indicative of future returns.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        /* ── Page config ── */
+        const pages = {
+            disclaimer: {
+                title: 'Disclaimer | AKMAY Enterprise LLP',
+                canonical: 'https://akmayenterprise.in/disclaimer',
+                heading: '<span class="gold-text">Disclaimer</span>',
+                subline: 'Please read this disclaimer carefully before using AKMAY Enterprise LLP\'s website or services.',
+                bc: 'Disclaimer',
+                toc: [
+                    { id: 'd-general', label: 'General Disclaimer' },
+                    { id: 'd-investment', label: 'Investment Risk' },
+                    { id: 'd-accuracy', label: 'Accuracy of Information' },
+                    { id: 'd-no-advice', label: 'No Investment Advice' },
+                    { id: 'd-regulatory', label: 'Regulatory Compliance' },
+                    { id: 'd-third-party', label: 'Third-Party Links' },
+                    { id: 'd-liability', label: 'Limitation of Liability' },
+                    { id: 'd-changes', label: 'Changes' },
+                ]
+            },
+            privacy: {
+                title: 'Privacy Policy | AKMAY Enterprise LLP',
+                canonical: 'https://akmayenterprise.in/privacy-policy',
+                heading: 'Privacy<br/><span class="gold-text">Policy</span>',
+                subline: 'We are committed to protecting your personal information and being transparent about how we use it.',
+                bc: 'Privacy Policy',
+                toc: [
+                    { id: 'p-intro', label: 'Introduction' },
+                    { id: 'p-collect', label: 'Information We Collect' },
+                    { id: 'p-use', label: 'How We Use Your Data' },
+                    { id: 'p-share', label: 'Information Sharing' },
+                    { id: 'p-security', label: 'Data Security' },
+                    { id: 'p-retention', label: 'Data Retention' },
+                    { id: 'p-rights', label: 'Your Rights' },
+                    { id: 'p-cookies', label: 'Cookies Policy' },
+                    { id: 'p-children', label: 'Children\'s Privacy' },
+                    { id: 'p-grievance', label: 'Grievance Officer' },
+                    { id: 'p-changes', label: 'Changes to Policy' },
+                ]
+            },
+            terms: {
+                title: 'Terms of Service | AKMAY Enterprise LLP',
+                canonical: 'https://akmayenterprise.in/terms-of-service',
+                heading: 'Terms of<br/><span class="gold-text">Service</span>',
+                subline: 'These terms govern your use of AKMAY Enterprise LLP\'s website and financial advisory services.',
+                bc: 'Terms of Service',
+                toc: [
+                    { id: 't-acceptance', label: 'Acceptance of Terms' },
+                    { id: 't-services', label: 'Our Services' },
+                    { id: 't-eligibility', label: 'User Eligibility' },
+                    { id: 't-kyc', label: 'KYC Obligations' },
+                    { id: 't-transactions', label: 'Transaction Terms' },
+                    { id: 't-fees', label: 'Fees & Charges' },
+                    { id: 't-intellectual', label: 'Intellectual Property' },
+                    { id: 't-prohibited', label: 'Prohibited Conduct' },
+                    { id: 't-liability', label: 'Limitation of Liability' },
+                    { id: 't-indemnification', label: 'Indemnification' },
+                    { id: 't-dispute', label: 'Dispute Resolution' },
+                    { id: 't-termination', label: 'Termination' },
+                    { id: 't-changes', label: 'Changes to Terms' },
+                ]
+            }
+        };
+
+        let currentPage = 'disclaimer';
+
+        function switchPage(page) {
+            currentPage = page;
+            const cfg = pages[page];
+
+            /* Meta */
+            document.getElementById('pg-title').textContent = cfg.title;
+            document.getElementById('pg-canonical').href = cfg.canonical;
+            document.getElementById('pg-heading').innerHTML = cfg.heading;
+            document.getElementById('pg-subline').textContent = cfg.subline;
+            document.getElementById('bc-current').textContent = cfg.bc;
+
+            /* Sections */
+            document.querySelectorAll('.legal-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('sec-' + page).classList.add('active');
+
+            /* Tabs */
+            document.querySelectorAll('.page-tab').forEach(t => t.classList.toggle('active', t.dataset.page === page));
+
+            /* TOC */
+            buildTOC(cfg.toc);
+
+            /* Side links */
+            ['disclaimer', 'privacy', 'terms'].forEach(p => {
+                const el = document.getElementById('side-' + p);
+                if (el) el.classList.toggle('active', p === page);
+            });
+
+            /* Scroll to top of content */
+            document.querySelector('.max-w-7xl.mx-auto.px-4.sm\\:px-6').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            /* Re-trigger reveal for newly shown section */
+            const activeSection = document.getElementById('sec-' + page);
+            activeSection.querySelectorAll('h2,h3,p,.highlight-box,.warn-box').forEach(el => {
+                el.style.opacity = '';
+                el.style.transform = '';
+            });
+
+            /* Refresh scroll spy */
+            observeHeadings();
+        }
+
+        function buildTOC(items) {
+            const nav = document.getElementById('toc-nav');
+            nav.innerHTML = '';
+            items.forEach(item => {
+                const a = document.createElement('a');
+                a.href = '#' + item.id;
+                a.className = 'toc-link';
+                a.textContent = item.label;
+                a.addEventListener('click', e => {
+                    e.preventDefault();
+                    const el = document.getElementById(item.id);
+                    if (el) {
+                        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        setTimeout(() => highlightTOC(item.id), 400);
+                    }
+                });
+                nav.appendChild(a);
+            });
+        }
+
+        function highlightTOC(activeId) {
+            document.querySelectorAll('#toc-nav .toc-link').forEach(a => {
+                a.classList.toggle('active', a.getAttribute('href') === '#' + activeId);
+            });
+        }
+
+        /* Active TOC on scroll */
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const id = e.target.id;
+                    if (id) highlightTOC(id);
+                }
+            });
+        }, { rootMargin: '-15% 0px -80% 0px', threshold: 0 });
+
+        function observeHeadings() {
+            obs.disconnect();
+            const activeSection = document.getElementById('sec-' + currentPage);
+            activeSection.querySelectorAll('h2[id],h3[id]').forEach(h => obs.observe(h));
+        }
+
+        /* Init */
+        buildTOC(pages.disclaimer.toc);
+        observeHeadings();
+
+        /* Check URL params for initial page */
+        const urlParams = new URLSearchParams(window.location.search);
+        const pg = urlParams.get('page');
+        if (pg && pages[pg]) switchPage(pg);
+
+        /* Nav scroll */
+        const nav = document.getElementById('topnav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
+
+        /* Reveal */
+        const rvio = new IntersectionObserver(e => {
+            e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('up'); rvio.unobserve(x.target); } });
+        }, { threshold: 0.06 });
+        document.querySelectorAll('.reveal').forEach(el => rvio.observe(el));
+    </script>
+</body>
+
+</html>

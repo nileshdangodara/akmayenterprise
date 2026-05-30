@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | AKMAY Enterprise LLP — Premier Wealth Management</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Get in touch with AKMAY Enterprise LLP for bespoke wealth management advisory, Pre-IPO access, Mutual Funds, Unlisted Shares, and Fixed Deposits. Based in India." />
+    <meta name="keywords"
+        content="AKMAY Enterprise LLP, wealth management, Pre-IPO, mutual funds, unlisted shares, fixed deposits, contact, financial advisory India" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="AKMAY Enterprise LLP" />
+    <link rel="canonical" href="https://akmayenterprise.in/contact" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact Us | AKMAY Enterprise LLP" />
+    <meta property="og:description"
+        content="Premier wealth management advisory. Reach out for Pre-IPO, Mutual Funds, Unlisted Shares and more." />
+    <meta property="og:url" content="https://akmayenterprise.in/contact" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "AKMAY Enterprise LLP",
+    "description": "Premier wealth management services including Pre-IPO, Mutual Funds, Unlisted Shares, and Fixed Deposits.",
+    "url": "https://akmayenterprise.in",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "availableLanguage": ["English", "Hindi"]
+    }
+  }
+  </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#08152A',
+                            navy2: '#0D1E38',
+                            gold: '#C5A059',
+                            gold2: '#E5D5B7',
+                            slate: '#F0F4F8',
+                            muted: '#8A9BB0',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Cormorant Garamond"', 'serif'],
+                        body: ['"ROBOTO"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --navy: #08152A;
+            --navy2: #0D1E38;
+            --gold: #C5A059;
+            --gold2: #E5D5B7;
+            --slate: #F0F4F8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        /* ── Grain overlay ──────────────────────────────────────── */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+            opacity: .5;
+        }
+
+        /* ── Nav ────────────────────────────────────────────────── */
+        #topnav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: background .4s, backdrop-filter .4s, border-color .4s, padding .3s;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid transparent;
+        }
+
+        #topnav.scrolled {
+            background: rgba(8, 21, 42, 0.75);
+            backdrop-filter: blur(20px);
+            border-bottom-color: rgba(197, 160, 89, .1);
+            padding: .75rem 0;
+        }
+
+        /* ── Dropdown ───────────────────────────────────────────── */
+        .nav-drop {
+            position: relative;
+        }
+
+        .nav-drop-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(8px);
+            min-width: 200px;
+            background: rgba(8, 21, 42, .97);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 160, 89, .2);
+            border-radius: 1rem;
+            padding: .5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .25s, transform .25s;
+        }
+
+        .nav-drop:hover .nav-drop-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ── Animated underline ─────────────────────────────────── */
+        .au {
+            position: relative;
+            display: inline-block;
+        }
+
+        .au::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold);
+            transition: width .5s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .au:hover::after {
+            width: 100%;
+        }
+
+        /* Mobile menu */
+        #mobile-menu {
+            display: none;
+        }
+
+        #mob-toggle:checked~#mobile-menu {
+            display: block;
+        }
+
+        .mob-drop-content {
+            display: none;
+        }
+
+        .mob-drop-toggle:checked~.mob-drop-content {
+            display: block;
+        }
+
+        .mob-drop-toggle:checked~label .di {
+            transform: rotate(180deg);
+        }
+
+        /* ── Glass card ─────────────────────────────────────────── */
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(197, 160, 89, 0.18);
+        }
+
+        /* ── Floating label inputs ──────────────────────────────── */
+        .field-wrap {
+            position: relative;
+        }
+
+        .field-wrap input,
+        .field-wrap textarea,
+        .field-wrap select {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.35);
+            padding: 1.4rem 0 0.5rem;
+            font-size: 0.9rem;
+            color: #F8FAFC;
+            outline: none;
+            transition: border-color 0.3s;
+            font-family: "Public Sans", sans-serif;
+            resize: none;
+        }
+
+        .field-wrap select option {
+            background: #0A192F;
+            color: #F8FAFC;
+        }
+
+        .field-wrap input:focus,
+        .field-wrap textarea:focus,
+        .field-wrap select:focus {
+            border-bottom-color: #C5A059;
+            box-shadow: none !important;
+
+        }
+
+        .field-wrap label {
+            position: absolute;
+            top: 1.3rem;
+            left: 0;
+            font-size: 0.85rem;
+            color: rgba(248, 250, 252, 0.4);
+            pointer-events: none;
+            transition: top 0.25s, font-size 0.25s, color 0.25s;
+        }
+
+        .field-wrap input:focus~label,
+        .field-wrap input:not(:placeholder-shown)~label,
+        .field-wrap textarea:focus~label,
+        .field-wrap textarea:not(:placeholder-shown)~label,
+        .field-wrap select:focus~label,
+        .field-wrap.filled label {
+            top: 0.1rem;
+            font-size: 0.7rem;
+            color: #C5A059;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .field-wrap .underline-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #C5A059;
+            transition: width 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .field-wrap input:focus~.underline-bar,
+        .field-wrap textarea:focus~.underline-bar,
+        .field-wrap select:focus~.underline-bar {
+            width: 100%;
+        }
+
+        /* ── Submit button ──────────────────────────────────────── */
+        .btn-gold {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 50%, #C5A059 100%);
+            background-size: 200% auto;
+            color: #0A192F;
+            font-weight: 700;
+            transition: background-position 0.5s, transform 0.2s, box-shadow 0.3s;
+        }
+
+        .btn-gold:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(197, 160, 89, 0.25);
+        }
+
+        .btn-gold:active {
+            transform: translateY(0);
+        }
+
+        /* ── Contact info card ──────────────────────────────────── */
+        .info-card {
+            border: 1px solid rgba(197, 160, 89, 0.15);
+            background: rgba(255, 255, 255, 0.02);
+            transition: border-color 0.3s, background 0.3s, transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .info-card:hover {
+            border-color: rgba(197, 160, 89, 0.5);
+            background: rgba(197, 160, 89, 0.04);
+            transform: translateY(-4px);
+        }
+
+        /* ── Reveal animation ───────────────────────────────────── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* ── Success overlay ────────────────────────────────────── */
+        #success-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(10, 25, 47, 0.96);
+            backdrop-filter: blur(8px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #success-overlay.show {
+            display: flex;
+        }
+
+        /* ── Ticker / marquee strip ─────────────────────────────── */
+        .marquee-wrap {
+            overflow: hidden;
+        }
+
+        .marquee-inner {
+            display: flex;
+            gap: 3rem;
+            white-space: nowrap;
+            animation: marquee 28s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ── Nav dropdown mobile ────────────────────────────────── */
+        #mobile-menu {
+            display: none;
+        }
+
+        #mobile-menu-toggle:checked~#mobile-menu {
+            display: block;
+        }
+
+        .mobile-dropdown-content {
+            display: none;
+        }
+
+        .mobile-dropdown-toggle:checked~.mobile-dropdown-content {
+            display: block;
+        }
+
+        .mobile-dropdown-toggle:checked~label .dropdown-icon {
+            transform: rotate(180deg);
+        }
+
+        /* ── Divider dot ────────────────────────────────────────── */
+        .dot-divider {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .dot-divider::before,
+        .dot-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(197, 160, 89, 0.2);
+        }
+
+        /* ── Char counter ───────────────────────────────────────── */
+        #char-count {
+            font-size: 0.7rem;
+            color: rgba(248, 250, 252, 0.3);
+        }
+
+        #char-count.warn {
+            color: #C5A059;
+        }
+    </style>
+</head>
+
+<body class="bg-brand-navy font-body text-brand-slate selection:bg-brand-gold selection:text-white relative z-10">
+
+    <!-- ══════════════════════════════════════════════════
+     TOP NAV — identical to homepage
+══════════════════════════════════════════════════ -->
+    <nav id="topnav" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="/images/logo.webp" alt="AKMAY Enterprise LLP" class="h-16 w-auto" />
+                    <span
+                        class="font-body font-semibold text-white text-base tracking-tight group-hover:text-brand-gold transition-colors">AKMAY
+                        Enterprise LLP</span>
+                </a>
+
+                <!-- Desktop links -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="/#about" class="au text-sm text-white/70 hover:text-white transition-colors">About</a>
+
+                    <div class="nav-drop">
+                        <button
+                            class="flex items-center gap-1 text-sm text-white/70 hover:text-white transition-colors py-2">
+                            Services <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div class="nav-drop-menu">
+                            <a href="/pre-ipo"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Pre-IPO
+                                Equity</a>
+                            <a href="/mutual-funds"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Mutual
+                                Funds</a>
+                            <a href="/unlisted-shares"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Unlisted
+                                Shares</a>
+                            <a href="/insurance"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Insurance</a>
+                            <a href="/physicaltodemat"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Physical
+                                to Demat</a>
+                            <a href="/fixed-deposits"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Fixed
+                                Deposits</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="au text-sm text-white/70 hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA + hamburger -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="/contact" class="btn-gold px-5 py-2.5 rounded-lg text-sm">Get Started</a>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="lg:hidden">
+                    <input id="mob-toggle" type="checkbox" class="hidden" />
+                    <label for="mob-toggle" class="cursor-pointer p-2 hover:bg-white/10 rounded-lg block">
+                        <span class="material-symbols-outlined text-white text-3xl">menu</span>
+                    </label>
+                    <div id="mobile-menu"
+                        class="absolute top-full left-0 w-full border-b border-brand-gold/15 py-4 shadow-2xl">
+                        <div class="flex flex-col gap-1 px-4">
+                            <a href="/#about"
+                                class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">About</a>
+                            <div>
+                                <input id="mob-svc" type="checkbox" class="hidden mob-drop-toggle" />
+                                <label for="mob-svc"
+                                    class="flex items-center justify-between py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl cursor-pointer text-sm">
+                                    Services <span
+                                        class="material-symbols-outlined di transition-transform">expand_more</span>
+                                </label>
+                                <div class="mob-drop-content pl-4 pb-2 space-y-1">
+                                    <a href="/pre-ipo"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Pre-IPO
+                                        Equity</a>
+                                    <a href="/mutual-funds"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Mutual
+                                        Funds</a>
+                                    <a href="/unlisted-shares"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Unlisted
+                                        Shares</a>
+                                    <a href="/insurance"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Insurance</a>
+                                    <a href="/physicaltodemat"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Physical to
+                                        Demat</a>
+                                    <a href="/fixed-deposits"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Fixed
+                                        Deposits</a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="/contact"
+                                    class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">Contact</a>
+                            </div>
+
+                            <a href="/contact" class="block mt-2 btn-gold py-3 px-4 rounded-xl text-sm text-center">Get
+                                Started →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════════
+     HERO STRIP
+══════════════════════════════════════════════════ -->
+    <header class="relative overflow-hidden pt-24 pb-16">
+        <!-- Ambient blobs -->
+        <div
+            class="absolute -top-32 -right-32 w-[32rem] h-[32rem] rounded-full bg-brand-gold/6 blur-[120px] pointer-events-none">
+        </div>
+        <div class="absolute top-1/2 -left-24 w-80 h-80 rounded-full bg-brand-gold/4 blur-[100px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+
+            <div class="max-w-2xl mt-10">
+                <p
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-gold/30 bg-brand-gold/8 text-brand-gold text-xs font-semibold tracking-widest uppercase mb-8">
+                    <span class="material-symbols-outlined text-sm">support_agent</span>
+                    Advisory Desk
+                </p>
+                <h1 class="font-headline text-5xl lg:text-7xl font-bold text-white leading-[1.05] mb-6 font-display">
+                    Let's Start a<br />
+                    <em class="not-italic text-brand-gold">Conversation</em>
+                </h1>
+                <p class="text-brand-slate/60 text-lg leading-relaxed max-w-lg">
+                    Whether you're exploring your first Pre-IPO allocation or optimising an existing portfolio — our
+                    advisory desk is ready to guide you.
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom gold line -->
+        <div class="gold-line mt-16 mx-4 sm:mx-8 lg:mx-16 reveal"></div>
+    </header>
+
+    <!-- ══════════════════════════════════════════════════
+     MARQUEE TRUST STRIP
+══════════════════════════════════════════════════ -->
+    <div class="marquee-wrap border-y border-brand-gold/10 py-4 mb-0">
+        <div class="marquee-inner text-xs text-brand-slate/30 font-semibold tracking-widest uppercase select-none">
+            <span>SEBI Compliant</span><span class="text-brand-gold/40">◆</span>
+            <span>Pre-IPO Access</span><span class="text-brand-gold/40">◆</span>
+            <span>Unlisted Shares</span><span class="text-brand-gold/40">◆</span>
+            <span>Physical to Demat</span><span class="text-brand-gold/40">◆</span>
+            <span>Mutual Funds</span><span class="text-brand-gold/40">◆</span>
+            <span>Fixed Deposits Up to 9.5% p.a.</span><span class="text-brand-gold/40">◆</span>
+            <span>Institutional-Grade Assets</span><span class="text-brand-gold/40">◆</span>
+            <span>Bespoke Advisory</span><span class="text-brand-gold/40">◆</span>
+            <!-- duplicate for seamless loop -->
+            <span>SEBI Compliant</span><span class="text-brand-gold/40">◆</span>
+            <span>Pre-IPO Access</span><span class="text-brand-gold/40">◆</span>
+            <span>Unlisted Shares</span><span class="text-brand-gold/40">◆</span>
+            <span>Physical to Demat</span><span class="text-brand-gold/40">◆</span>
+            <span>Mutual Funds</span><span class="text-brand-gold/40">◆</span>
+            <span>Fixed Deposits Up to 9.5% p.a.</span><span class="text-brand-gold/40">◆</span>
+            <span>Institutional-Grade Assets</span><span class="text-brand-gold/40">◆</span>
+            <span>Bespoke Advisory</span><span class="text-brand-gold/40">◆</span>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+     MAIN CONTENT — Form + Info
+══════════════════════════════════════════════════ -->
+    <main>
+        <section class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-5 gap-12 xl:gap-20 items-start">
+
+                    <!-- ── LEFT: Contact Form ────────────────────────────── -->
+                    <div class="lg:col-span-3 reveal">
+                        <div class="glass rounded-2xl p-8 sm:p-10">
+                            <h2 class="font-headline text-2xl font-bold text-white mb-1">Send a Message</h2>
+                            <p class="text-sm text-brand-slate/40 mb-10">We respond within one business day.</p>
+
+                            <form id="contact-form" novalidate class="space-y-10">
+
+                                <!-- Row 1: Name + Email -->
+                                <div class="grid sm:grid-cols-2 gap-10">
+                                    <div class="field-wrap">
+                                        <input type="text" id="name" name="name" placeholder=" " autocomplete="name"
+                                            required />
+                                        <label for="name">Full Name</label>
+                                        <span class="underline-bar"></span>
+                                        <p class="error-msg text-xs text-red-400 mt-1 hidden">Please enter your name.
+                                        </p>
+                                    </div>
+                                    <div class="field-wrap">
+                                        <input type="email" id="email" name="email" placeholder=" " autocomplete="email"
+                                            required />
+                                        <label for="email">Email Address</label>
+                                        <span class="underline-bar"></span>
+                                        <p class="error-msg text-xs text-red-400 mt-1 hidden">Enter a valid email
+                                            address.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Row 2: Phone + Service -->
+                                <div class="grid sm:grid-cols-2 gap-10">
+                                    <div class="field-wrap">
+                                        <input type="tel" id="phone" name="phone" placeholder=" " autocomplete="tel" />
+                                        <label for="phone">Phone (Optional)</label>
+                                        <span class="underline-bar"></span>
+                                    </div>
+                                    <div class="field-wrap filled" id="service-wrap">
+                                        <select id="service" name="service" required>
+                                            <option value="" disabled selected></option>
+                                            <option>Pre-IPO Equity</option>
+                                            <option>Mutual Funds</option>
+                                            <option>Unlisted Shares</option>
+                                            <option>Physical to Demat</option>
+                                            <option>Fixed Deposits</option>
+                                            <option>Portfolio Audit</option>
+                                            <option>General Enquiry</option>
+                                        </select>
+                                        <label for="service">Area of Interest</label>
+                                        <span class="underline-bar"></span>
+                                        <p class="error-msg text-xs text-red-400 mt-1 hidden">Please select a service.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Row 3: Message -->
+                                <div class="field-wrap">
+                                    <textarea id="message" name="message" placeholder=" " rows="4" maxlength="500"
+                                        required></textarea>
+                                    <label for="message">Your Message</label>
+                                    <span class="underline-bar"></span>
+                                    <div class="flex justify-between mt-1">
+                                        <p class="error-msg text-xs text-red-400 hidden">Please write a message.</p>
+                                        <span id="char-count" class="ml-auto">0 / 500</span>
+                                    </div>
+                                </div>
+
+                                <!-- Consent -->
+                                <div class="flex items-start gap-3">
+                                    <div class="mt-0.5 relative">
+                                        <input type="checkbox" id="f-consent" required
+                                    class="appearance-none mt-0.5 w-4 h-4 border border-brand-gold/40 rounded-sm bg-transparent checked:bg-brand-gold checked:border-brand-gold transition-colors cursor-pointer flex-shrink-0" />
+                                        <span
+                                            class="material-symbols-outlined text-brand-navy text-xs absolute top-0 left-0 pointer-events-none"
+                                            id="check-icon"
+                                            style="display:none;font-size:1rem;line-height:1rem;">check</span>
+                                    </div>
+                                    <label for="consent"
+                                        class="text-xs text-brand-slate/40 leading-relaxed cursor-pointer">
+                                        I agree to the <a href="#"
+                                            class="text-brand-gold underline underline-offset-2 hover:text-brand-accent transition-colors">Privacy
+                                            Policy</a> and consent to AKMAY Enterprise LLP contacting me regarding my
+                                        enquiry.
+                                    </label>
+                                </div>
+                                <p class="consent-error text-xs text-red-400 hidden -mt-6">You must accept the terms to
+                                    proceed.</p>
+
+                                <!-- Submit -->
+                                <button type="submit" id="submit-btn"
+                                    class="btn-gold w-full py-4 rounded-xl text-sm font-bold tracking-wide flex items-center justify-center gap-2 group">
+                                    <span id="btn-text">Send Message</span>
+                                    <span id="btn-icon"
+                                        class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">send</span>
+                                    <svg id="btn-spinner" class="hidden animate-spin w-4 h-4"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                            stroke-width="4" />
+                                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                                    </svg>
+                                </button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- ── RIGHT: Info + Cards ───────────────────────────── -->
+                    <div class="lg:col-span-2 space-y-6">
+
+                        <!-- Label -->
+                        <p class="text-xs font-semibold tracking-widest uppercase text-brand-gold/60 reveal">Or reach us
+                            directly</p>
+
+                        <!-- Email -->
+                        <article class="info-card rounded-2xl p-6 reveal group cursor-pointer"
+                            onclick="window.location='mailto:advisory@akmayenterprise.in'">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/20 transition-colors">
+                                    <span class="material-symbols-outlined text-brand-gold text-lg">mail</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-slate/40 uppercase tracking-widest mb-1">Email</p>
+                                    <p class="text-white font-medium text-sm">advisory@akmayenterprise.in</p>
+                                    <p class="text-brand-slate/40 text-xs mt-0.5">Enquiries & portfolio consultation</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Phone -->
+                        <article class="info-card rounded-2xl p-6 reveal group cursor-pointer"
+                            onclick="window.location='tel:+91XXXXXXXXXX'">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/20 transition-colors">
+                                    <span class="material-symbols-outlined text-brand-gold text-lg">call</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-slate/40 uppercase tracking-widest mb-1">Phone</p>
+                                    <p class="text-white font-medium text-sm">+91 70455 29267</p>
+                                    <p class="text-brand-slate/40 text-xs mt-0.5">Mon – Sat, 9 AM – 7 PM IST</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- WhatsApp -->
+                        <article class="info-card rounded-2xl p-6 reveal group cursor-pointer"
+                            onclick="window.open('https://wa.me/917045529267','_blank')">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold/20 transition-colors">
+                                    <span class="material-symbols-outlined text-brand-gold text-lg">chat</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-slate/40 uppercase tracking-widest mb-1">WhatsApp</p>
+                                    <p class="text-white font-medium text-sm">Quick Chat on WhatsApp</p>
+                                    <p class="text-brand-slate/40 text-xs mt-0.5">Fastest way to reach us</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Office -->
+                        <article class="info-card rounded-2xl p-6 reveal">
+                            <div class="flex items-start gap-4">
+                                <div
+                                    class="w-10 h-10 rounded-lg bg-brand-gold/10 flex items-center justify-center flex-shrink-0">
+                                    <span class="material-symbols-outlined text-brand-gold text-lg">location_on</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-brand-slate/40 uppercase tracking-widest mb-1">Office</p>
+                                    <p class="text-white font-medium text-sm">AKMAY Enterprise LLP</p>
+                                    <address class="not-italic text-brand-slate/40 text-xs mt-0.5 leading-relaxed">
+                                        201, JAI LAXMI NARAYAN CO, SOC, LT ROAD, MULUND, MULUND POLICE STATION, Mumbai
+400081, Maharashtra, India
+                                    </address>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+
+                       
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════
+     FAQ MINI SECTION
+══════════════════════════════════════════════════ -->
+        <section class="pb-24" aria-labelledby="faq-heading">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14 reveal">
+                    <p class="text-xs font-semibold tracking-widest uppercase text-brand-gold/60 mb-3">Before you write
+                    </p>
+                    <h2 id="faq-heading" class="font-headline text-3xl font-bold text-white">Quick Answers</h2>
+                    <div class="h-px w-16 bg-brand-gold mx-auto mt-4 opacity-60"></div>
+                </div>
+
+                <div class="space-y-3">
+                    <details
+                        class="group border border-brand-gold/15 rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors reveal">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+                            <span class="text-sm font-semibold text-white">What is the minimum ticket size for
+                                Pre-IPO?</span>
+                            <span
+                                class="material-symbols-outlined text-brand-gold group-open:rotate-180 transition-transform flex-shrink-0">expand_more</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-sm text-brand-slate/50 leading-relaxed">
+                            Minimum investment requirements vary by opportunity, with select pre-IPO ventures accessible to qualified retail investors — enabling participation in institutional-grade early-stage growth without restrictive entry barriers.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group border border-brand-gold/15 rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors reveal">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+                            <span class="text-sm font-semibold text-white">How quickly will someone respond to my
+                                enquiry?</span>
+                            <span
+                                class="material-symbols-outlined text-brand-gold group-open:rotate-180 transition-transform flex-shrink-0">expand_more</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-sm text-brand-slate/50 leading-relaxed">
+                            Our advisory desk responds within one business day. For urgent matters, WhatsApp is the
+                            fastest channel — Mon to Sat, 9 AM–7 PM IST.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group border border-brand-gold/15 rounded-xl overflow-hidden hover:border-brand-gold/40 transition-colors reveal">
+                        <summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+                            <span class="text-sm font-semibold text-white">Is my personal data safe?</span>
+                            <span
+                                class="material-symbols-outlined text-brand-gold group-open:rotate-180 transition-transform flex-shrink-0">expand_more</span>
+                        </summary>
+                        <div class="px-5 pb-5 text-sm text-brand-slate/50 leading-relaxed">
+                            Absolutely. Information submitted via this form is used solely to respond to your enquiry
+                            and is never shared with third parties without your explicit consent.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+    <footer class="bg-brand-navy pt-20 pb-10 border-t border-brand-gold/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="/images/logo.webp" alt="AKMAY Logo" class="h-20" />
+                        <span class="text-white font-semibold">AKMAY Enterprise LLP</span>
+                    </div>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                        Institutional-grade investment advisory for discerning investors. Expertise, integrity,
+                        strategic growth.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" aria-label="Share"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">share</span>
+                        </a>
+                        <a href="mailto:nilesh1321910@gmail.com" aria-label="Contact"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Solutions</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Pre-IPO Equity</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Mutual Funds</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Unlisted Shares</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Insurance Advisory</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Fixed Deposits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Services</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Physical to Demat</a></li>
+                        <li><a href="#process" class="hover:text-white transition-colors">Portfolio Audit</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Wealth Planning</a></li>
+                        <li><a href="/contact" class="hover:text-white transition-colors">SIP Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Stay Informed</h3>
+                    <p class="text-brand-muted text-sm mb-5 leading-relaxed">Weekly market intelligence and exclusive
+                        unlisted opportunities.</p>
+                    <div class="flex flex-col gap-3">
+                        <input type="email" id="subscriber-email" placeholder="your@email.com"
+                            class="w-full bg-white/5 border border-brand-gold/20 rounded-lg py-2.5 px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-brand-gold transition-colors" />
+                        <button id="subscribe-btn"
+                            class="btn-gold py-2.5 rounded-lg text-sm font-bold w-full disabled:opacity-50 disabled:cursor-not-allowed">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gline mb-8"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/20">© 2024 AKMAY Enterprise LLP. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-5 text-xs text-white/20">
+                    <a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">SEBI Compliance</a>
+                    <a href="/contact" class="hover:text-brand-gold transition-colors">Contact Us</a>
+                </div>
+            </div>
+
+            <p class="text-xs text-white/15 mt-6 text-center max-w-2xl mx-auto leading-relaxed">
+                Investment in securities market is subject to market risks. Read all the related documents carefully
+                before investing. Past performance is not indicative of future returns. AKMAY Enterprise LLP facilitates
+                transactions through SEBI-registered entities.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ══════════════════════════════════════════════════
+     SUCCESS OVERLAY
+══════════════════════════════════════════════════ -->
+    <div id="success-overlay" role="dialog" aria-modal="true" aria-label="Message sent successfully">
+        <div class="max-w-md w-full">
+            <!-- Animated check -->
+            <div class="w-20 h-20 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center mx-auto mb-8"
+                id="success-icon">
+                <span class="material-symbols-outlined text-brand-gold text-4xl">check_circle</span>
+            </div>
+            <h2 class="font-headline text-3xl font-bold text-white mb-4">Message Received</h2>
+            <p class="text-brand-slate/50 mb-10 leading-relaxed">
+                Thank you for reaching out. A member of our advisory desk will respond within one business day.
+            </p>
+            <div class="h-px w-full bg-brand-gold/20 mb-10"></div>
+            <button onclick="document.getElementById('success-overlay').classList.remove('show')"
+                class="btn-gold px-10 py-3 rounded-xl text-sm font-bold">
+                Back to Page
+            </button>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════════════════ -->
+
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Advisory | AKMAY Enterprise LLP — Life, Health, Term & ULIP Plans India</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="AKMAY Enterprise LLP offers expert insurance advisory across Term Life, Health, ULIP and Endowment plans. Find the right coverage for your wealth protection strategy. IRDAI-compliant, expert-guided." />
+    <meta name="keywords"
+        content="insurance advisory India, term life insurance, health insurance India, ULIP investment, best insurance plans 2024, AKMAY Enterprise insurance, wealth protection India" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://akmayenterprise.in/insurance" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Insurance Advisory | AKMAY Enterprise LLP" />
+    <meta property="og:description"
+        content="Expert insurance advisory — Term Life, Health, ULIP & Endowment. Tailored coverage aligned to your wealth strategy." />
+    <meta property="og:url" content="https://akmayenterprise.in/insurance" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"InsuranceAgency","name":"AKMAY Enterprise LLP — Insurance Advisory","description":"Expert insurance advisory across Term Life, Health, ULIP and Endowment plans. IRDAI-compliant advisory.","url":"https://akmayenterprise.in/insurance","areaServed":"IN","hasOfferCatalog":{"@type":"OfferCatalog","name":"Insurance Products","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Term Life Insurance"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Health Insurance"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"ULIP Plans"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Endowment Plans"}}]}}
+  </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <script>
+        tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { navy: '#08152A', navy2: '#0D1E38', gold: '#C5A059', gold2: '#E5D5B7', slate: '#F0F4F8', muted: '#8A9BB0' } }, fontFamily: { display: ['"Cormorant Garamond"', 'serif'], body: ['"ROBOTO"', 'sans-serif'] } } } }
+    </script>
+
+    <style>
+        :root {
+            --navy: #08152A;
+            --navy2: #0D1E38;
+            --gold: #C5A059;
+            --gold2: #E5D5B7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        /* Grain */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+            opacity: .5;
+        }
+
+        /* Nav */
+        #topnav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: background .4s, border-color .4s, padding .3s;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid transparent;
+        }
+
+        #topnav.scrolled {
+            background: rgba(8, 21, 42, 0.75);
+            backdrop-filter: blur(20px);
+            border-bottom-color: rgba(197, 160, 89, .1);
+            padding: .75rem 0;
+        }
+
+        .nav-drop {
+            position: relative;
+        }
+
+        .nav-drop-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(8px);
+            min-width: 200px;
+            background: rgba(8, 21, 42, .97);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 160, 89, .2);
+            border-radius: 1rem;
+            padding: .5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .25s, transform .25s;
+        }
+
+        .nav-drop:hover .nav-drop-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #mobile-menu {
+            display: none;
+            background: rgba(8, 21, 42, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+
+        #mob-toggle:checked~#mobile-menu {
+            display: block;
+        }
+
+        .mob-drop-content {
+            display: none;
+        }
+
+        .mob-drop-toggle:checked~.mob-drop-content {
+            display: block;
+        }
+
+        .mob-drop-toggle:checked~label .di {
+            transform: rotate(180deg);
+        }
+
+        /* Core tokens */
+        .gold-text {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 45%, #C5A059 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gline {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold2) 60%, var(--gold) 80%, transparent);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .035);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(197, 160, 89, .18);
+        }
+
+        .sec-label {
+            font-size: .65rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: rgba(197, 160, 89, .6);
+            font-weight: 600;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 50%, #C5A059 100%);
+            background-size: 200% auto;
+            color: #08152A;
+            font-weight: 700;
+            transition: background-position .5s, transform .2s, box-shadow .3s;
+        }
+
+        .btn-gold:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(197, 160, 89, .3);
+        }
+
+        .btn-ghost {
+            border: 1px solid rgba(197, 160, 89, .45);
+            color: var(--gold2);
+            font-weight: 600;
+            transition: background .3s, border-color .3s, transform .2s;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(197, 160, 89, .08);
+            border-color: rgba(197, 160, 89, .7);
+            transform: translateY(-2px);
+        }
+
+        /* Reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .7s ease, transform .7s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .reveal.up {
+            opacity: 1;
+            transform: none;
+        }
+
+        .reveal-l {
+            opacity: 0;
+            transform: translateX(-24px);
+            transition: opacity .7s ease, transform .7s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .reveal-l.up {
+            opacity: 1;
+            transform: none;
+        }
+
+        .reveal-r {
+            opacity: 0;
+            transform: translateX(24px);
+            transition: opacity .7s ease, transform .7s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .reveal-r.up {
+            opacity: 1;
+            transform: none;
+        }
+
+        /* Hero anims */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(36px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(.93)
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1)
+            }
+        }
+
+        .ha1 {
+            animation: fadeUp .85s cubic-bezier(.23, 1, .32, 1) .1s both;
+        }
+
+        .ha2 {
+            animation: fadeUp .85s cubic-bezier(.23, 1, .32, 1) .25s both;
+        }
+
+        .ha3 {
+            animation: fadeUp .85s cubic-bezier(.23, 1, .32, 1) .4s both;
+        }
+
+        .ha4 {
+            animation: scaleIn 1s cubic-bezier(.23, 1, .32, 1) .45s both;
+        }
+
+        /* Float CTA */
+        #float-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 90;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity .4s, transform .4s;
+            pointer-events: none;
+        }
+
+        #float-cta.show {
+            opacity: 1;
+            transform: none;
+            pointer-events: auto;
+        }
+
+        /* Ticker */
+        .ticker-wrap {
+            overflow: hidden;
+        }
+
+        .ticker-inner {
+            display: flex;
+            gap: 3rem;
+            white-space: nowrap;
+            animation: ticker 28s linear infinite;
+        }
+
+        @keyframes ticker {
+            from {
+                transform: translateX(0)
+            }
+
+            to {
+                transform: translateX(-50%)
+            }
+        }
+
+        /* Product type tab */
+        .ptab {
+            padding: .5rem 1.25rem;
+            border-radius: 9999px;
+            font-size: .8rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background .2s, color .2s, border-color .2s;
+            border: 1px solid rgba(197, 160, 89, .2);
+            color: rgba(240, 244, 248, .45);
+            background: transparent;
+        }
+
+        .ptab:hover {
+            background: rgba(197, 160, 89, .08);
+            color: rgba(240, 244, 248, .8);
+        }
+
+        .ptab.active {
+            background: rgba(197, 160, 89, .18);
+            border-color: rgba(197, 160, 89, .55);
+            color: #C5A059;
+        }
+
+        /* Insurance card */
+        .ins-card {
+            border: 1px solid rgba(197, 160, 89, .12);
+            background: rgba(255, 255, 255, .02);
+            border-radius: 0.875rem;
+            transition: all .3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ins-card:hover {
+            border-color: rgba(197, 160, 89, .25);
+            background: rgba(255, 255, 255, .035);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .3);
+        }
+
+        .ins-card.featured-card {
+            border-color: rgba(197, 160, 89, .25);
+            background: rgba(197, 160, 89, .08);
+        }
+
+        /* Type colour chips */
+        .chip-term {
+            background: rgba(59, 130, 246, .12);
+            color: #60A5FA;
+            border: 1px solid rgba(59, 130, 246, .25);
+        }
+
+        .chip-health {
+            background: rgba(52, 211, 153, .12);
+            color: #34D399;
+            border: 1px solid rgba(52, 211, 153, .25);
+        }
+
+        .chip-ulip {
+            background: rgba(197, 160, 89, .15);
+            color: #C5A059;
+            border: 1px solid rgba(197, 160, 89, .3);
+        }
+
+        .chip-endow {
+            background: rgba(167, 139, 250, .12);
+            color: #A78BFA;
+            border: 1px solid rgba(167, 139, 250, .25);
+        }
+
+        /* Search */
+        input[type="text"].search-box {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid rgba(197, 160, 89, .2);
+            color: #fff;
+            transition: border-color .3s, background .3s, box-shadow .3s;
+        }
+
+        input[type="text"].search-box:focus {
+            outline: none;
+            border-color: rgba(197, 160, 89, .6);
+            background: rgba(255, 255, 255, .06);
+            box-shadow: 0 0 0 1px rgba(197, 160, 89, .6);
+        }
+
+        input[type="text"].search-box::placeholder {
+            color: rgba(240, 244, 248, .25);
+        }
+
+        /* Sort */
+        .sort-sel {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid rgba(197, 160, 89, .2);
+            color: rgba(240, 244, 248, .6);
+            border-radius: .5rem;
+            padding: .4rem .8rem;
+            font-size: .75rem;
+            font-family: "DM Sans", sans-serif;
+            cursor: pointer;
+            outline: none;
+            transition: border-color .3s;
+        }
+
+        .sort-sel:focus {
+            border-color: rgba(197, 160, 89, .5);
+        }
+
+        .sort-sel option {
+            background: #0D1E38;
+        }
+
+        /* View toggle */
+        .vtab {
+            padding: .4rem 1rem;
+            border-radius: .5rem;
+            font-size: .75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background .2s, color .2s;
+            color: rgba(240, 244, 248, .4);
+        }
+
+        .vtab.active {
+            background: rgba(197, 160, 89, .15);
+            color: #C5A059;
+        }
+
+        /* Table row */
+        .tbl-row {
+            border-bottom: 1px solid rgba(197, 160, 89, .06);
+            transition: background .2s;
+        }
+
+        .tbl-row:hover {
+            background: rgba(197, 160, 89, .04);
+        }
+
+        .tbl-row:last-child {
+            border-bottom: none;
+        }
+
+        /* Need Finder quiz */
+        .quiz-step {
+            display: none;
+        }
+
+        .quiz-step.active {
+            display: block;
+        }
+
+        .qopt {
+            border: 1px solid rgba(197, 160, 89, .15);
+            border-radius: .875rem;
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            transition: border-color .3s, background .3s, transform .3s cubic-bezier(.23, 1, .32, 1);
+            background: rgba(255, 255, 255, .02);
+            display: flex;
+            align-items: center;
+            gap: .875rem;
+        }
+
+        .qopt:hover {
+            border-color: rgba(197, 160, 89, .45);
+            background: rgba(197, 160, 89, .06);
+            transform: translateX(4px);
+        }
+
+        .qopt.selected {
+            border-color: rgba(197, 160, 89, .6);
+            background: rgba(197, 160, 89, .12);
+        }
+
+        .qopt-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: .625rem;
+            background: rgba(197, 160, 89, .1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .quiz-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--gold), var(--gold2));
+            border-radius: 2px;
+            transition: width .5s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        /* Benefit card */
+        .benefit-card {
+            border: 1px solid rgba(197, 160, 89, .1);
+            background: rgba(255, 255, 255, .02);
+            border-radius: 1.25rem;
+            transition: border-color .35s, background .35s, transform .4s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .benefit-card:hover {
+            border-color: rgba(197, 160, 89, .4);
+            background: rgba(197, 160, 89, .04);
+            transform: translateY(-5px);
+        }
+
+        /* FAQ */
+        .faq-item {
+            border: 1px solid rgba(197, 160, 89, .12);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: border-color .3s;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(197, 160, 89, .35);
+        }
+
+        .faq-icon {
+            transition: transform .3s;
+            display: inline-block;
+        }
+
+        details[open] .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Modal */
+        #enquiry-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(8, 21, 42, .87);
+            backdrop-filter: blur(12px);
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        #enquiry-modal.open {
+            display: flex;
+        }
+
+        .modal-box {
+            background: linear-gradient(145deg, #0D1E38, #08152A);
+            border: 1px solid rgba(197, 160, 89, .25);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            max-width: 460px;
+            width: 100%;
+            position: relative;
+            max-height: 100vh;
+            overflow-y: auto;
+        }
+
+        @keyframes mIn {
+            from {
+                opacity: 0;
+                transform: scale(.93) translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .modal-box {
+            animation: mIn .35s cubic-bezier(.23, 1, .32, 1) both;
+        }
+
+        /* Form */
+        .mf {
+            position: relative;
+            margin-bottom: 1.6rem;
+        }
+
+        .mf input,
+        .mf select,
+        .mf textarea {
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(197, 160, 89, .3);
+            padding: 1.3rem 0 .4rem;
+            font-size: .85rem;
+            color: #F0F4F8;
+            outline: none;
+            transition: border-color .3s;
+            font-family: "DM Sans", sans-serif;
+            resize: none;
+        }
+
+        .mf select option {
+            background: #0D1E38;
+        }
+
+        .mf input:focus,
+        .mf select:focus,
+        .mf textarea:focus {
+            border-bottom-color: #C5A059;
+        }
+
+        .mf label {
+            position: absolute;
+            top: 1.2rem;
+            left: 0;
+            font-size: .8rem;
+            color: rgba(240, 244, 248, .35);
+            pointer-events: none;
+            transition: top .25s, font-size .25s, color .25s;
+        }
+
+        .mf input:focus~label,
+        .mf input:not(:placeholder-shown)~label,
+        .mf.filled label {
+            top: .05rem;
+            font-size: .65rem;
+            color: #C5A059;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .mf .ub {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: #C5A059;
+            transition: width .4s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .mf input:focus~.ub,
+        .mf select:focus~.ub,
+        .mf textarea:focus~.ub {
+            width: 100%;
+        }
+
+        /* Success overlay */
+        #success-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 99999;
+            background: rgba(8, 21, 42, .96);
+            backdrop-filter: blur(10px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #success-overlay.show {
+            display: flex;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--navy);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(197, 160, 89, .4);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="font-body text-brand-slate overflow-x-hidden" style="background:#08152A;">
+
+    <!-- Float CTA -->
+    <button id="float-cta" onclick="openModal(null)"
+        class="btn-gold flex items-center gap-2 px-5 py-3 rounded-full shadow-2xl text-sm font-semibold">
+        <span class="material-symbols-outlined text-base">health_and_safety</span> Get Covered
+    </button>
+
+    <!-- ════════════════════════ NAV ════════════════════════ -->
+    <nav id="topnav" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="/images/logo.webp" alt="AKMAY Enterprise LLP" class="h-16 w-auto" />
+                    <span
+                        class="font-body font-semibold text-white text-base tracking-tight group-hover:text-brand-gold transition-colors">AKMAY
+                        Enterprise LLP</span>
+                </a>
+
+                <!-- Desktop links -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#about" class="au text-sm text-white/70 hover:text-white transition-colors">About</a>
+
+                    <div class="nav-drop">
+                        <button
+                            class="flex items-center gap-1 text-sm text-white/70 hover:text-white transition-colors py-2">
+                            Services <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div class="nav-drop-menu">
+                            <a href="/pre-ipo"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Pre-IPO
+                                Equity</a>
+                            <a href="/mutual-funds"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Mutual
+                                Funds</a>
+                            <a href="/unlisted-shares"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Unlisted
+                                Shares</a>
+                            <a href="/insurance"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Insurance</a>
+                            <a href="/physicaltodemat"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Physical
+                                to Demat</a>
+                            <a href="/fixed-deposits"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Fixed
+                                Deposits</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="au text-sm text-white/70 hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA + hamburger -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="/contact" class="btn-gold px-5 py-2.5 rounded-lg text-sm">Get Started</a>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="lg:hidden">
+                    <input id="mob-toggle" type="checkbox" class="hidden" />
+                    <label for="mob-toggle" class="cursor-pointer p-2 hover:bg-white/10 rounded-lg block">
+                        <span class="material-symbols-outlined text-white text-3xl">menu</span>
+                    </label>
+                    <div id="mobile-menu"
+                        class="absolute top-full left-0 w-full border-b border-brand-gold/15 py-4 shadow-2xl">
+                        <div class="flex flex-col gap-1 px-4">
+                            <a href="/"
+                                class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">About</a>
+                            <div>
+                                <input id="mob-svc" type="checkbox" class="hidden mob-drop-toggle" />
+                                <label for="mob-svc"
+                                    class="flex items-center justify-between py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl cursor-pointer text-sm">
+                                    Services <span
+                                        class="material-symbols-outlined di transition-transform">expand_more</span>
+                                </label>
+                                <div class="mob-drop-content pl-4 pb-2 space-y-1">
+                                    <a href="/pre-ipo"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Pre-IPO
+                                        Equity</a>
+                                    <a href="/mutual-funds"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Mutual
+                                        Funds</a>
+                                    <a href="/unlisted-shares"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Unlisted
+                                        Shares</a>
+                                    <a href="/insurance"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Insurance</a>
+                                    <a href="/physicaltodemat"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Physical to
+                                        Demat</a>
+                                    <a href="/fixed-deposits"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Fixed
+                                        Deposits</a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="/contact"
+                                    class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">Contact</a>
+                            </div>
+
+                            <a href="/contact" class="block mt-2 btn-gold py-3 px-4 rounded-xl text-sm text-center">Get
+                                Started →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ════════════════════════ HERO ════════════════════════ -->
+    <section class="relative overflow-hidden pt-32 pb-16"
+        style="background:radial-gradient(ellipse 75% 55% at 68% 30%,rgba(197,160,89,.08) 0%,transparent 60%),linear-gradient(158deg,#08152A 0%,#0D1E38 55%,#08152A 100%);">
+        <div class="absolute -top-24 right-0 w-[520px] h-[520px] rounded-full opacity-8 pointer-events-none"
+            style="background:radial-gradient(circle,rgba(197,160,89,.5) 0%,transparent 70%)"></div>
+        <div class="absolute inset-0 pointer-events-none opacity-[0.035]"
+            style="background-image:radial-gradient(circle,rgba(197,160,89,.8) 1px,transparent 1px);background-size:48px 48px;">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <nav aria-label="Breadcrumb" class="mb-10 ha1">
+                <ol class="flex items-center gap-2 text-xs text-white/30">
+                    <li><a href="/" class="hover:text-brand-gold transition-colors">Home</a></li>
+                    <li><span class="material-symbols-outlined text-xs">chevron_right</span></li>
+                    <li><a href="index.html#services" class="hover:text-brand-gold transition-colors">Services</a></li>
+                    <li><span class="material-symbols-outlined text-xs">chevron_right</span></li>
+                    <li class="text-brand-gold">Insurance Advisory</li>
+                </ol>
+            </nav>
+
+            <div class="grid lg:grid-cols-12 gap-14 items-center">
+                <!-- Copy -->
+                <div class="lg:col-span-6">
+                    <div class="ha1">
+                        <span
+                            class="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase px-4 py-1.5 rounded-full border border-brand-gold/30 bg-brand-gold/8 text-brand-gold mb-8">
+                            <span class="material-symbols-outlined text-sm">health_and_safety</span>
+                            IRDAI-Compliant Advisory
+                        </span>
+                    </div>
+                    <h1 class="font-display ha2"
+                        style="font-size:clamp(2.8rem,5vw,4.8rem);line-height:1.05;color:#fff;margin-bottom:1.25rem;">
+                        Protect What<br />You've Built.<br /><span class="gold-text">Grow What Remains.</span>
+                    </h1>
+                    <p class="text-brand-muted leading-relaxed ha3 max-w-lg mb-10" style="font-size:1rem;">
+                        True wealth strategy extends beyond returns — it demands robust protection. AKMAY's insurance
+                        advisory aligns Term Life, Health, ULIP and Endowment plans precisely to your portfolio,
+                        lifestyle and legacy goals.
+                    </p>
+                    <div class="flex flex-wrap gap-4 ha3">
+                        <a href="#find-cover"
+                            class="btn-gold px-8 py-4 rounded-xl text-sm flex items-center gap-2 group">
+                            Find Your Cover <span
+                                class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_downward</span>
+                        </a>
+                        <a href="#plans-listing" class="btn-ghost px-8 py-4 rounded-xl text-sm">Browse Plans →</a>
+                    </div>
+                    <div class="flex flex-wrap gap-5 mt-10 ha3">
+                        <span class="flex items-center gap-1.5 text-xs text-white/40"><span
+                                class="material-symbols-outlined text-brand-gold text-sm">verified</span>IRDAI
+                            Registered Partners</span>
+                        <span class="w-px h-4 bg-brand-gold/20 self-center"></span>
+                        <span class="flex items-center gap-1.5 text-xs text-white/40"><span
+                                class="material-symbols-outlined text-brand-gold text-sm">compare</span>Unbiased
+                            Multi-Insurer View</span>
+                        <span class="w-px h-4 bg-brand-gold/20 self-center"></span>
+                        <span class="flex items-center gap-1.5 text-xs text-white/40"><span
+                                class="material-symbols-outlined text-brand-gold text-sm">support_agent</span>Claims
+                            Support</span>
+                    </div>
+                </div>
+
+                <!-- Right: Cover tiles -->
+                <div class="lg:col-span-6 ha4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Term -->
+                        <div class="glass rounded-2xl p-5 col-span-2">
+                            <div class="flex items-center justify-between mb-3">
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="w-9 h-9 rounded-xl bg-blue-500/15 border border-blue-500/20 flex items-center justify-center">
+                                        <span
+                                            class="material-symbols-outlined text-blue-400 text-lg">shield_person</span>
+                                    </div>
+                                    <div>
+                                        <p class="text-white font-semibold text-sm">Term Life Insurance</p>
+                                        <p class="text-white/30 text-xs">Pure protection · Highest cover</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <p class="text-white font-display text-xl font-bold">₹1 Cr+</p>
+                                    <p class="text-white/30 text-xs">from ₹500/mo</p>
+                                </div>
+                            </div>
+                            <div class="h-1 rounded-full bg-white/5 overflow-hidden">
+                                <div class="h-full rounded-full bg-blue-400/60" style="width:92%"></div>
+                            </div>
+                            <p class="text-white/25 text-xs mt-1.5 text-right">Popularity with AKMAY clients</p>
+                        </div>
+
+                        <!-- Health -->
+                        <div class="glass rounded-2xl p-5">
+                            <div
+                                class="w-9 h-9 rounded-xl bg-emerald-500/15 border border-emerald-500/20 flex items-center justify-center mb-3">
+                                <span class="material-symbols-outlined text-emerald-400 text-lg">medical_services</span>
+                            </div>
+                            <p class="text-white font-semibold text-sm mb-1">Health</p>
+                            <p class="text-white/30 text-xs mb-3">Family floater & individual</p>
+                            <div class="flex items-end gap-1">
+                                <p class="font-display text-brand-gold text-xl font-bold">₹25L</p>
+                                <p class="text-white/25 text-xs mb-0.5">cover</p>
+                            </div>
+                        </div>
+
+                        <!-- ULIP -->
+                        <div class="glass rounded-2xl p-5">
+                            <div
+                                class="w-9 h-9 rounded-xl bg-brand-gold/15 border border-brand-gold/25 flex items-center justify-center mb-3">
+                                <span class="material-symbols-outlined text-brand-gold text-lg">trending_up</span>
+                            </div>
+                            <p class="text-white font-semibold text-sm mb-1">ULIP</p>
+                            <p class="text-white/30 text-xs mb-3">Protection + Market returns</p>
+                            <div class="flex items-end gap-1">
+                                <p class="font-display text-brand-gold text-xl font-bold">12%+</p>
+                                <p class="text-white/25 text-xs mb-0.5">CAGR</p>
+                            </div>
+                        </div>
+
+                        <!-- Stat row -->
+                        <div class="col-span-2 grid grid-cols-3 gap-3">
+                            <div class="bg-white/3 rounded-xl p-3 text-center">
+                                <p class="font-display text-2xl text-brand-gold font-bold">30+</p>
+                                <p class="text-white/30 text-xs mt-0.5">Insurers</p>
+                            </div>
+                            <div class="bg-white/3 rounded-xl p-3 text-center">
+                                <p class="font-display text-2xl text-brand-gold font-bold">98%</p>
+                                <p class="text-white/30 text-xs mt-0.5">Claim Settlement</p>
+                            </div>
+                            <div class="bg-white/3 rounded-xl p-3 text-center">
+                                <p class="font-display text-2xl text-brand-gold font-bold">Free</p>
+                                <p class="text-white/30 text-xs mt-0.5">Advisory</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex justify-end">
+                        <div class="glass rounded-xl px-4 py-2.5 flex items-center gap-2.5">
+                            <span class="material-symbols-outlined text-brand-gold text-lg">workspace_premium</span>
+                            <div>
+                                <p class="text-white text-xs font-semibold">Unbiased Advice — Always</p>
+                                <p class="text-brand-gold text-xs">We recommend what's best for you, not us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap border-y border-brand-gold/10 py-3.5 bg-brand-navy2">
+        <div class="ticker-inner text-xs font-semibold tracking-widest uppercase select-none text-white/20">
+            <span>Term Life Insurance</span><span class="text-brand-gold/30">◆</span>
+            <span>Health Insurance</span><span class="text-brand-gold/30">◆</span>
+            <span>ULIP Plans</span><span class="text-brand-gold/30">◆</span>
+            <span>Endowment Plans</span><span class="text-brand-gold/30">◆</span>
+            <span>Critical Illness Cover</span><span class="text-brand-gold/30">◆</span>
+            <span>Child Plans</span><span class="text-brand-gold/30">◆</span>
+            <span>IRDAI Registered</span><span class="text-brand-gold/30">◆</span>
+            <span>98%+ Claim Settlement</span><span class="text-brand-gold/30">◆</span>
+            <span>30+ Insurer Partners</span><span class="text-brand-gold/30">◆</span>
+            <!-- duplicate -->
+            <span>Term Life Insurance</span><span class="text-brand-gold/30">◆</span>
+            <span>Health Insurance</span><span class="text-brand-gold/30">◆</span>
+            <span>ULIP Plans</span><span class="text-brand-gold/30">◆</span>
+            <span>Endowment Plans</span><span class="text-brand-gold/30">◆</span>
+            <span>Critical Illness Cover</span><span class="text-brand-gold/30">◆</span>
+            <span>Child Plans</span><span class="text-brand-gold/30">◆</span>
+            <span>IRDAI Registered</span><span class="text-brand-gold/30">◆</span>
+            <span>98%+ Claim Settlement</span><span class="text-brand-gold/30">◆</span>
+            <span>30+ Insurer Partners</span><span class="text-brand-gold/30">◆</span>
+        </div>
+    </div>
+
+    <!-- ════════════════════ NEED FINDER QUIZ ════════════════════ -->
+    <section id="find-cover" class="py-24 bg-brand-navy">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal">
+                <p class="sec-label mb-4">Interactive Tool</p>
+                <h2 class="font-display text-5xl text-white font-semibold">Find Your<br /><span class="gold-text">Ideal
+                        Cover</span></h2>
+                <p class="text-brand-muted text-sm mt-4 max-w-sm mx-auto">Answer 4 quick questions. We'll recommend the
+                    most relevant insurance type for your situation.</p>
+            </div>
+
+            <div class="glass rounded-2xl p-8 reveal">
+                <!-- Progress bar -->
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="flex-1 h-1 bg-white/6 rounded-full overflow-hidden">
+                        <div class="quiz-progress-fill h-full" id="quiz-prog" style="width:25%"></div>
+                    </div>
+                    <span class="text-brand-gold text-xs font-semibold" id="quiz-step-label">1 / 4</span>
+                </div>
+
+                <!-- Step 1: Primary Goal -->
+                <div class="quiz-step active" id="qs1">
+                    <h3 class="font-display text-2xl text-white font-semibold mb-2">What is your primary goal?</h3>
+                    <p class="text-brand-muted text-sm mb-6">Choose the option that best matches your current priority.
+                    </p>
+                    <div class="space-y-3" id="q1-opts">
+                        <div class="qopt" data-val="protect" onclick="selectOpt(this,'q1')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">shield_person</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Protect my family financially</p>
+                                <p class="text-white/35 text-xs">In case something happens to me</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="health" onclick="selectOpt(this,'q1')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">medical_services</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Cover medical expenses</p>
+                                <p class="text-white/35 text-xs">For self and family</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="grow" onclick="selectOpt(this,'q1')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">trending_up</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Grow wealth with protection</p>
+                                <p class="text-white/35 text-xs">Investment-linked insurance</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="legacy" onclick="selectOpt(this,'q1')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">family_history</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Leave a legacy for my children</p>
+                                <p class="text-white/35 text-xs">Long-term savings and child plans</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Life stage -->
+                <div class="quiz-step" id="qs2">
+                    <h3 class="font-display text-2xl text-white font-semibold mb-2">What is your life stage?</h3>
+                    <p class="text-brand-muted text-sm mb-6">This shapes the ideal tenure and coverage amount.</p>
+                    <div class="space-y-3" id="q2-opts">
+                        <div class="qopt" data-val="single" onclick="selectOpt(this,'q2')">
+                            <div class="qopt-icon"><span class="material-symbols-outlined text-brand-gold">person</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Single / No dependants</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="married" onclick="selectOpt(this,'q2')">
+                            <div class="qopt-icon"><span class="material-symbols-outlined text-brand-gold">people</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Married, no children yet</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="family" onclick="selectOpt(this,'q2')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">family_restroom</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Married with children</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="senior" onclick="selectOpt(this,'q2')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">elderly</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Pre-retirement (50+)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Monthly budget -->
+                <div class="quiz-step" id="qs3">
+                    <h3 class="font-display text-2xl text-white font-semibold mb-2">Monthly premium budget?</h3>
+                    <p class="text-brand-muted text-sm mb-6">We'll shortlist plans fitting your budget without
+                        compromising coverage.</p>
+                    <div class="space-y-3" id="q3-opts">
+                        <div class="qopt" data-val="low" onclick="selectOpt(this,'q3')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">payments</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Under ₹1,000 / month</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="mid" onclick="selectOpt(this,'q3')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">payments</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">₹1,000 – ₹5,000 / month</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="high" onclick="selectOpt(this,'q3')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">payments</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">₹5,000 – ₹15,000 / month</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="premium" onclick="selectOpt(this,'q3')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">workspace_premium</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">₹15,000+ / month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Existing cover -->
+                <div class="quiz-step" id="qs4">
+                    <h3 class="font-display text-2xl text-white font-semibold mb-2">Do you have any existing coverage?
+                    </h3>
+                    <p class="text-brand-muted text-sm mb-6">We'll fill the gaps and avoid duplication.</p>
+                    <div class="space-y-3" id="q4-opts">
+                        <div class="qopt" data-val="none" onclick="selectOpt(this,'q4')">
+                            <div class="qopt-icon"><span class="material-symbols-outlined text-brand-gold">cancel</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-sm">No insurance at all</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="only-employer" onclick="selectOpt(this,'q4')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">business_center</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">Only employer-provided group cover</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="some" onclick="selectOpt(this,'q4')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">check_circle</span></div>
+                            <div>
+                                <p class="text-white font-medium text-sm">I have some personal policies</p>
+                            </div>
+                        </div>
+                        <div class="qopt" data-val="portfolio" onclick="selectOpt(this,'q4')">
+                            <div class="qopt-icon"><span
+                                    class="material-symbols-outlined text-brand-gold">account_balance_wallet</span>
+                            </div>
+                            <div>
+                                <p class="text-white font-medium text-sm">I have a portfolio — want a review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result panel -->
+                <div class="quiz-step" id="qs-result">
+                    <div class="text-center">
+                        <div
+                            class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center mx-auto mb-5">
+                            <span class="material-symbols-outlined text-brand-gold text-3xl">star</span>
+                        </div>
+                        <h3 class="font-display text-2xl text-white font-semibold mb-3">Your Recommendation</h3>
+                        <div id="quiz-result-text"
+                            class="text-brand-muted text-sm leading-relaxed mb-6 max-w-sm mx-auto"></div>
+                        <div id="quiz-result-tags" class="flex flex-wrap justify-center gap-2 mb-8"></div>
+                        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                            <button onclick="openModal(null)"
+                                class="btn-gold px-8 py-3 rounded-xl text-sm flex items-center gap-2 justify-center group">
+                                Talk to an Advisor <span
+                                    class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </button>
+                            <button onclick="resetQuiz()" class="btn-ghost px-8 py-3 rounded-xl text-sm">Retake
+                                Quiz</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nav buttons -->
+                <div class="flex justify-between mt-8" id="quiz-nav">
+                    <button onclick="quizBack()" id="quiz-back"
+                        class="btn-ghost px-5 py-2.5 rounded-xl text-sm flex items-center gap-1.5 invisible">
+                        <span class="material-symbols-outlined text-sm">arrow_back</span> Back
+                    </button>
+                    <button onclick="quizNext()" id="quiz-next"
+                        class="btn-gold px-6 py-2.5 rounded-xl text-sm flex items-center gap-1.5 opacity-50 cursor-not-allowed"
+                        disabled>
+                        Next <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════ PLANS LISTING ════════════════════ -->
+    <main id="plans-listing" class="py-16" style="background:var(--navy2);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <p class="sec-label mb-4">Product Catalogue</p>
+                <h2 class="font-display text-5xl text-white font-semibold">Insurance Plans<br /><span
+                        class="gold-text">We Advise On</span></h2>
+            </div>
+
+            <!-- Filter bar -->
+            <div class="mb-8 reveal">
+                <div class="flex flex-col lg:flex-row gap-4 items-start lg:items-center flex-wrap">
+                    <div class="relative max-w-xs w-full">
+                        <span
+                            class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-white/25 text-lg pointer-events-none">search</span>
+                        <input id="ins-search" type="text" placeholder="Search plans or insurers…"
+                            class="search-box w-full pl-10 pr-4 py-2.5 rounded-xl text-sm" />
+                    </div>
+                    <div class="flex flex-wrap gap-2" id="type-filters">
+                        <button class="ptab active" data-type="all">All Types</button>
+                        <button class="ptab" data-type="Term">Term Life</button>
+                        <button class="ptab" data-type="Health">Health</button>
+                        <button class="ptab" data-type="ULIP">ULIP</button>
+                        <button class="ptab" data-type="Endowment">Endowment</button>
+                    </div>
+                    <div class="flex items-center gap-3 ml-auto">
+                        <select id="ins-sort" class="sort-sel">
+                            <option value="default">Sort: Featured</option>
+                            <option value="az">A → Z</option>
+                            <option value="premium-low">Premium ↑</option>
+                            <option value="cover-high">Cover ↑</option>
+                        </select>
+                        <div class="flex glass rounded-lg overflow-hidden">
+                            <button class="vtab active" id="vg"><span
+                                    class="material-symbols-outlined text-base">grid_view</span></button>
+                            <button class="vtab" id="vt"><span
+                                    class="material-symbols-outlined text-base">table_rows</span></button>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-xs text-white/25 mt-3"><span id="ins-count">16</span> plans · <span
+                        class="text-brand-gold/60">Indicative data · Verify with insurer</span></p>
+            </div>
+
+            <div id="grid-view" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"></div>
+            <div id="table-view" class="hidden">
+                <div class="glass rounded-2xl overflow-hidden">
+                    <div class="grid gap-3 px-5 py-3 border-b border-brand-gold/10 text-xs text-white/30 uppercase tracking-wider font-semibold"
+                        style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;">
+                        <span>Plan</span><span class="text-right">Type</span><span class="text-right">Cover</span><span
+                            class="text-right">Premium</span><span class="text-right">Claim%</span><span
+                            class="text-right">Action</span>
+                    </div>
+                    <div id="table-body"></div>
+                </div>
+            </div>
+            <div id="empty-state" class="hidden text-center py-20">
+                <span class="material-symbols-outlined text-brand-gold/30 text-5xl">search_off</span>
+                <p class="text-white/30 text-sm mt-4">No plans match your filter.</p>
+                <button onclick="resetFilters()"
+                    class="btn-ghost mt-4 px-6 py-2.5 rounded-xl text-sm inline-flex items-center gap-2">Reset</button>
+            </div>
+            <p class="text-xs text-white/15 mt-10 text-center max-w-2xl mx-auto leading-relaxed reveal">* All premium
+                and cover data is indicative. Actual premiums depend on age, health, sum assured and insurer
+                underwriting. AKMAY Enterprise LLP is not an insurer — we facilitate advisory and distribution via
+                IRDAI-registered entities.</p>
+        </div>
+    </main>
+
+    <!-- ════════════════════ WHY AKMAY ════════════════════ -->
+    <section class="py-24 bg-brand-navy">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <p class="sec-label mb-4">The Advisory Edge</p>
+                <h2 class="font-display text-5xl text-white font-semibold">Why Get Insurance<br /><span
+                        class="gold-text">Through AKMAY?</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="benefit-card p-7 reveal">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-5">
+                        <span class="material-symbols-outlined text-brand-gold">balance</span>
+                    </div>
+                    <h3 class="font-display text-xl text-white font-semibold mb-3">Unbiased Multi-Insurer View</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">We compare plans across 30+ insurers and
+                        recommend solely on your interest — not commission. Fully transparent advisory with no hidden
+                        incentives.</p>
+                </div>
+                <div class="benefit-card p-7 reveal" style="transition-delay:.08s">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-5">
+                        <span class="material-symbols-outlined text-brand-gold">integration_instructions</span>
+                    </div>
+                    <h3 class="font-display text-xl text-white font-semibold mb-3">Portfolio-Integrated Planning</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Your insurance is designed as a layer of your
+                        overall AKMAY wealth plan — complementing Pre-IPO, FDs and Mutual Funds for a truly holistic
+                        financial architecture.</p>
+                </div>
+                <div class="benefit-card p-7 reveal" style="transition-delay:.16s">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-5">
+                        <span class="material-symbols-outlined text-brand-gold">handshake</span>
+                    </div>
+                    <h3 class="font-display text-xl text-white font-semibold mb-3">End-to-End Claims Support</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Our advisory doesn't end at purchase. In case of
+                        a claim, our team assists your family through the entire process — from documentation to
+                        settlement.</p>
+                </div>
+                <div class="benefit-card p-7 reveal">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-5">
+                        <span class="material-symbols-outlined text-brand-gold">medical_information</span>
+                    </div>
+                    <h3 class="font-display text-xl text-white font-semibold mb-3">Annual Policy Review</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Life changes — so should your coverage. We
+                        conduct an annual insurance audit alongside your investment review to ensure your protection
+                        stays aligned with your life stage.</p>
+                </div>
+                <div class="benefit-card p-7 reveal" style="transition-delay:.08s">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-5">
+                        <span class="material-symbols-outlined text-brand-gold">receipt</span>
+                    </div>
+                    <h3 class="font-display text-xl text-white font-semibold mb-3">Tax Optimisation</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">Term and health premiums qualify for deductions
+                        under Sections 80C and 80D. We structure your insurance purchases to maximise annual tax savings
+                        alongside your investments.</p>
+                </div>
+                <div class="benefit-card p-7 reveal" style="transition-delay:.16s">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center mb-5">
+                        <span class="material-symbols-outlined text-brand-gold">group_add</span>
+                    </div>
+                    <h3 class="font-display text-xl text-white font-semibold mb-3">Corporate Group Plans</h3>
+                    <p class="text-brand-muted text-sm leading-relaxed">For business owners and partners, we structure
+                        group health and life plans for employees — securing your team and building a compelling
+                        benefits package at optimised premiums.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════ FAQ ════════════════════ -->
+    <section class="py-24" style="background:var(--navy2);">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal">
+                <p class="sec-label mb-4">Common Questions</p>
+                <h2 class="font-display text-5xl text-white font-semibold">FAQ</h2>
+                <div class="gline w-16 mx-auto mt-5"></div>
+            </div>
+            <div class="space-y-3" id="faq-container"></div>
+            <p class="text-center text-brand-muted text-sm mt-10 reveal">More questions? <a href="/contact"
+                    class="text-brand-gold hover:underline font-semibold">Talk to our team →</a></p>
+        </div>
+    </section>
+
+    <!-- ════════════════════ CTA ════════════════════ -->
+    <section class="py-24 relative overflow-hidden bg-brand-navy">
+        <div class="absolute inset-0 pointer-events-none opacity-40"
+            style="background:conic-gradient(from 180deg at 50% 50%,rgba(197,160,89,.12) 0deg,transparent 120deg,rgba(197,160,89,.08) 240deg,transparent 360deg);animation:spin 22s linear infinite;">
+        </div>
+        <div class="max-w-2xl mx-auto px-4 text-center relative z-10 reveal">
+            <p class="sec-label mb-5">Get Protected</p>
+            <h2 class="font-display text-5xl text-white font-semibold mb-4">The Right Cover.<br /><span
+                    class="gold-text">Right Now.</span></h2>
+            <div class="gline w-24 mx-auto mb-7"></div>
+            <p class="text-brand-muted text-sm leading-relaxed mb-10 max-w-md mx-auto">Tell us about yourself and your
+                goals. Our insurance advisor will design a coverage architecture that protects your wealth, your family
+                and your legacy.</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="openModal(null)"
+                    class="btn-gold px-10 py-4 rounded-xl text-sm w-full sm:w-auto flex items-center justify-center gap-2 group">
+                    Get Free Advisory <span
+                        class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+                <a href="#find-cover" class="btn-ghost px-10 py-4 rounded-xl text-sm w-full sm:w-auto text-center">Take
+                    the Quiz</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════ FOOTER ════════════════════ -->
+    <footer class="bg-brand-navy pt-20 pb-10 border-t border-brand-gold/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="/images/logo.webp" alt="AKMAY Logo" class="h-20" />
+                        <span class="text-white font-semibold">AKMAY Enterprise LLP</span>
+                    </div>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                        Institutional-grade investment advisory for discerning investors. Expertise, integrity,
+                        strategic growth.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" aria-label="Share"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">share</span>
+                        </a>
+                        <a href="mailto:nilesh1321910@gmail.com" aria-label="Contact"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Solutions</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Pre-IPO Equity</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Mutual Funds</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Unlisted Shares</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Insurance Advisory</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Fixed Deposits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Services</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Physical to Demat</a></li>
+                        <li><a href="#process" class="hover:text-white transition-colors">Portfolio Audit</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Wealth Planning</a></li>
+                        <li><a href="/contact" class="hover:text-white transition-colors">SIP Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Stay Informed</h3>
+                    <p class="text-brand-muted text-sm mb-5 leading-relaxed">Weekly market intelligence and exclusive
+                        unlisted opportunities.</p>
+                    <div class="flex flex-col gap-3">
+                        <input type="email" id="subscriber-email" placeholder="your@email.com"
+                            class="w-full bg-white/5 border border-brand-gold/20 rounded-lg py-2.5 px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-brand-gold transition-colors" />
+                        <button id="subscribe-btn"
+                            class="btn-gold py-2.5 rounded-lg text-sm font-bold w-full disabled:opacity-50 disabled:cursor-not-allowed">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gline mb-8"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/20">© 2024 AKMAY Enterprise LLP. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-5 text-xs text-white/20">
+                    <a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">SEBI Compliance</a>
+                    <a href="/contact" class="hover:text-brand-gold transition-colors">Contact Us</a>
+                </div>
+            </div>
+
+            <p class="text-xs text-white/15 mt-6 text-center max-w-2xl mx-auto leading-relaxed">
+                Investment in securities market is subject to market risks. Read all the related documents carefully
+                before investing. Past performance is not indicative of future returns. AKMAY Enterprise LLP facilitates
+                transactions through SEBI-registered entities.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ════════════════════ ENQUIRY MODAL ════════════════════ -->
+    <div id="enquiry-modal" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <button onclick="closeModal()"
+                class="absolute top-4 right-4 w-8 h-8 rounded-full glass flex items-center justify-center text-white/40 hover:text-white transition-colors">
+                <span class="material-symbols-outlined text-base">close</span>
+            </button>
+            <div id="modal-plan-banner"
+                class="hidden flex items-center gap-3 p-3 rounded-xl bg-brand-gold/8 border border-brand-gold/20 mb-6">
+                <div class="w-10 h-10 rounded-xl bg-brand-gold/15 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-brand-gold">health_and_safety</span>
+                </div>
+                <div class="flex-1 min-w-0">
+                    <p id="modal-plan-name" class="text-white font-semibold text-sm"></p>
+                    <p id="modal-plan-meta" class="text-brand-muted text-xs"></p>
+                </div>
+            </div>
+            <p class="sec-label mb-2">Free Advisory</p>
+            <h2 class="font-display text-2xl text-white font-semibold mb-1">Get Insured Today</h2>
+            <p class="text-brand-muted text-xs mb-7">Our advisor will reach out within one business day with
+                personalised plan recommendations.</p>
+            <form id="modal-form" novalidate>
+                <div class="grid grid-cols-2 gap-x-6">
+                    <div class="mf col-span-2 sm:col-span-1">
+                        <input type="text" id="m-name" placeholder=" " required />
+                        <label for="m-name">Full Name</label>
+                        <span class="ub"></span>
+                    </div>
+                    <div class="mf col-span-2 sm:col-span-1">
+                        <input type="number" id="m-age" placeholder=" " min="18" max="75" />
+                        <label for="m-age">Age</label>
+                        <span class="ub"></span>
+                    </div>
+                </div>
+                <div class="mf">
+                    <input type="email" id="m-email" placeholder=" " required />
+                    <label for="m-email">Email Address</label>
+                    <span class="ub"></span>
+                </div>
+                <div class="mf">
+                    <input type="tel" id="m-phone" placeholder=" " />
+                    <label for="m-phone">Phone Number</label>
+                    <span class="ub"></span>
+                </div>
+                <div class="mf filled">
+                    <select id="m-type" required>
+                        <option value="" disabled selected></option>
+                        <option>Term Life Insurance</option>
+                        <option>Health Insurance</option>
+                        <option>ULIP Plan</option>
+                        <option>Endowment Plan</option>
+                        <option>Not sure — need advice</option>
+                    </select>
+                    <label for="m-type">Insurance Type</label>
+                    <span class="ub"></span>
+                </div>
+                <div class="mf filled">
+                    <select id="m-budget">
+                        <option value="" disabled selected></option>
+                        <option>Under ₹1,000/month</option>
+                        <option>₹1,000–₹5,000/month</option>
+                        <option>₹5,000–₹15,000/month</option>
+                        <option>₹15,000+/month</option>
+                    </select>
+                    <label for="m-budget">Monthly Budget</label>
+                    <span class="ub"></span>
+                </div>
+                <button type="submit" id="m-submit"
+                    class="btn-gold w-full py-3.5 rounded-xl text-sm mt-2 flex items-center justify-center gap-2 group">
+                    <span id="m-txt">Get Free Advisory</span>
+                    <span
+                        class="material-symbols-outlined text-sm group-hover:translate-x-0.5 transition-transform">send</span>
+                    <svg id="m-spin" class="hidden animate-spin w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                    </svg>
+                </button>
+            </form>
+            <p class="text-xs text-white/20 text-center mt-4">Your data is never shared. Advisory only.</p>
+        </div>
+    </div>
+
+    <!-- Success -->
+    <div id="success-overlay">
+        <div class="max-w-md w-full text-center">
+            <div
+                class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center mx-auto mb-6">
+                <span class="material-symbols-outlined text-brand-gold text-3xl">check_circle</span>
+            </div>
+            <h2 class="font-display text-3xl text-white font-semibold mb-3">Advisory Requested</h2>
+            <p class="text-brand-muted text-sm mb-8 max-w-sm mx-auto leading-relaxed">An AKMAY insurance advisor will
+                contact you within one business day with personalised plan recommendations.</p>
+            <button onclick="document.getElementById('success-overlay').classList.remove('show')"
+                class="btn-gold px-8 py-3 rounded-xl text-sm">Back to Plans</button>
+        </div>
+    </div>
+    <script id="plans-data" type="application/json">
+  <%- JSON.stringify(plans) %>
+</script>
+    <!-- ════════════════════ SCRIPTS ════════════════════ -->
+    <script>
+        /* ── Plans Data ── */
+        const plans = JSON.parse(document.getElementById('plans-data').textContent);
+
+        /* ── FAQs ── */
+        const faqs = [
+            { q: 'What is the difference between Term and ULIP insurance?', a: 'A Term plan provides pure life cover — if you pass away during the policy term, your nominee receives the sum assured. It has no maturity value. A ULIP (Unit Linked Insurance Plan) combines life cover with investment in market-linked funds, meaning you can accumulate wealth over the policy term while remaining insured.' },
+            { q: 'How much life cover do I actually need?', a: 'A common rule of thumb is 10–15× your annual income. However, the ideal amount depends on your liabilities (home loan, business debt), dependant count, existing assets and future goals like children\'s education. Our advisors run a detailed Human Life Value (HLV) calculation for every client.' },
+            { q: 'Is health insurance really necessary if my employer provides cover?', a: 'Employer-provided cover is typically ₹3–5 Lakh per year, covers only active employment, and ceases when you change jobs. A personal health policy ensures continuity, typically ₹10–50 Lakh in coverage, no co-pay, and is indexed to medical inflation through no-claim bonuses.' },
+            { q: 'Can I claim tax benefits on insurance premiums?', a: 'Yes. Life insurance premiums qualify under Section 80C (up to ₹1.5 Lakh per year). Health insurance premiums qualify under Section 80D — up to ₹25,000 for self and family (₹50,000 if a parent is a senior citizen). Maturity proceeds of life policies are tax-free under Section 10(10D) subject to conditions.' },
+            { q: 'What happens if I miss an insurance premium payment?', a: 'Most insurers offer a 15–30 day grace period. Missing beyond the grace period lapses the policy, which means the cover ceases. Some policies have revival options within 2 years. Term plans lapse immediately after grace; ULIPs have built-in fund value protection. AKMAY sends premium reminders for all clients.' },
+            { q: 'What is a "free look" period for an insurance policy?', a: 'IRDAI mandates a 15–30 day free look period during which you can review any new policy and return it for a full premium refund if unsatisfied — no questions asked. AKMAY always advises clients to use this window to fully understand their policy documents.' },
+        ];
+
+        /* ── Render helpers ── */
+        function chipClass(type) { const m = { Term: 'chip-term', Health: 'chip-health', ULIP: 'chip-ulip', Endowment: 'chip-endow' }; return m[type] || 'chip-term'; }
+
+        function renderGrid(list) {
+            const c = document.getElementById('grid-view'); c.innerHTML = '';
+            list.forEach((p, i) => {
+                const card = document.createElement('article');
+                card.className = `ins-card p-5 flex flex-col${p.hot ? ' featured-card' : ''}`;
+                card.style.animation = `fadeUp .5s cubic-bezier(.23,1,.32,1) ${i * 0.04}s both`;
+                card.innerHTML = `
+      <!-- Clean Header -->
+      <div class="flex items-start justify-between mb-4 pb-4 border-b border-white/8">
+        <div class="flex items-center gap-2.5">
+          ${p.imglink ? `<img src="${p.imglink}" class="w-9 h-9 rounded-lg object-cover" alt="${p.name}">` : `<div class="w-9 h-9 rounded-lg bg-brand-gold/10 flex items-center justify-center text-brand-gold font-bold text-xs">${p.name.substring(0, 2).toUpperCase()}</div>`}
+          <div class="min-w-0">
+            <p class="text-white/50 text-xs leading-none">${p.insurer}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 flex-shrink-0">
+          <span class="${chipClass(p.type)} px-2 py-0.5 rounded text-xs font-semibold">${p.type}</span>
+          ${p.hot ? '<span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded text-xs font-bold">HOT</span>' : ''}
+        </div>
+      </div>
+
+      <!-- Product Info -->
+      <h3 class="text-white font-semibold text-base mb-2">${p.name}</h3>
+      <p class="text-white/50 text-sm mb-4 leading-snug">${p.desc}</p>
+
+      <!-- Key Stats -->
+      <div class="space-y-3 mb-5">
+        <div class="flex justify-between items-baseline">
+          <span class="text-white/40 text-xs">Sum Insured</span>
+          <span class="text-white font-bold text-sm">${p.cover}</span>
+        </div>
+        <div class="flex justify-between items-baseline">
+          <span class="text-white/40 text-xs">Starting Premium</span>
+          <span class="text-brand-gold font-bold text-sm">${p.premium}</span>
+        </div>
+        <div class="flex justify-between items-baseline">
+          <span class="text-white/40 text-xs">Settlement Ratio</span>
+          <span class="text-emerald-400 font-semibold text-sm">${p.claim}</span>
+        </div>
+      </div>
+
+      <!-- Features -->
+      ${(p.features || []).length > 0 ? `
+      <div class="mb-5 pb-5 border-t border-white/8 pt-4">
+        <div class="flex flex-wrap gap-1.5">
+          ${(p.features || []).map(f => `<span class="text-xs text-white/50 px-2 py-1 rounded border border-white/10">${f}</span>`).join('')}
+        </div>
+      </div>
+      ` : `<div class="mb-5"></div>`}
+
+      <!-- CTA -->
+      <button onclick="openModal(${p.id})" class="btn-gold w-full py-2.5 rounded-lg text-sm font-semibold">
+        Get Advisory
+      </button>
+    `;
+                c.appendChild(card);
+            });
+        }
+
+        function renderTable(list) {
+            const b = document.getElementById('table-body'); b.innerHTML = '';
+            list.forEach(p => {
+                const row = document.createElement('div');
+                row.className = 'tbl-row grid items-center px-5 py-3.5';
+                row.style.gridTemplateColumns = '2fr 1fr 1fr 1fr 1fr 1fr';
+                row.innerHTML = `
+      <div class="flex items-center gap-3">
+        ${p.imglink ? `<img src="${p.imglink}" class="w-8 h-8 rounded-lg object-cover border border-white/5" alt="${p.name}">` : `<div class="w-8 h-8 rounded-lg bg-brand-gold/10 flex items-center justify-center text-brand-gold text-[10px] font-bold">${p.name.substring(0, 2).toUpperCase()}</div>`}
+        <div>
+          <p class="text-white text-sm font-medium">${p.name}</p>
+          <p class="text-white/35 text-xs">${p.insurer}</p>
+        </div>
+      </div>
+      <div class="text-right"><span class="text-xs ${chipClass(p.type)} px-2 py-0.5 rounded-full">${p.type}</span></div>
+      <div class="text-right text-brand-muted text-sm">${p.cover}</div>
+      <div class="text-right text-brand-gold font-semibold text-sm">${p.premium}</div>
+      <div class="text-right text-emerald-400 text-sm">${p.claim}</div>
+      <div class="text-right"><button onclick="openModal(${p.id})" class="btn-gold px-3 py-1.5 rounded-lg text-xs">Advise</button></div>
+    `;
+                b.appendChild(row);
+            });
+        }
+
+        let curType = 'all', curSort = 'default', curSearch = '', curView = 'grid';
+        function getFiltered() {
+            let l = [...plans];
+            if (curType !== 'all') l = l.filter(p => p.type === curType);
+            if (curSearch) l = l.filter(p => p.name.toLowerCase().includes(curSearch) || p.insurer.toLowerCase().includes(curSearch));
+            if (curSort === 'az') l.sort((a, b) => a.name.localeCompare(b.name));
+            else if (curSort === 'premium-low') l.sort((a, b) => a.premiumNum - b.premiumNum);
+            else if (curSort === 'cover-high') l.sort((a, b) => b.coverNum - a.coverNum);
+            else l.sort((a, b) => (b.hot ? 1 : 0) - (a.hot ? 1 : 0));
+            return l;
+        }
+        function renderAll() {
+            const l = getFiltered();
+            document.getElementById('ins-count').textContent = l.length;
+            const em = document.getElementById('empty-state');
+            if (!l.length) { em.classList.remove('hidden'); document.getElementById('grid-view').innerHTML = ''; document.getElementById('table-body').innerHTML = ''; return; }
+            em.classList.add('hidden');
+            if (curView === 'grid') renderGrid(l); else renderTable(l);
+        }
+        function resetFilters() { curType = 'all'; curSearch = ''; curSort = 'default'; document.getElementById('ins-search').value = ''; document.getElementById('ins-sort').value = 'default'; document.querySelectorAll('.ptab').forEach(p => p.classList.toggle('active', p.dataset.type === 'all')); renderAll(); }
+
+        document.getElementById('ins-search').addEventListener('input', e => { curSearch = e.target.value.toLowerCase().trim(); renderAll(); });
+        document.getElementById('ins-sort').addEventListener('change', e => { curSort = e.target.value; renderAll(); });
+        document.querySelectorAll('.ptab').forEach(btn => btn.addEventListener('click', () => { curType = btn.dataset.type; document.querySelectorAll('.ptab').forEach(p => p.classList.remove('active')); btn.classList.add('active'); renderAll(); }));
+        document.getElementById('vg').addEventListener('click', () => { curView = 'grid'; document.getElementById('grid-view').classList.remove('hidden'); document.getElementById('table-view').classList.add('hidden'); document.getElementById('vg').classList.add('active'); document.getElementById('vt').classList.remove('active'); renderAll(); });
+        document.getElementById('vt').addEventListener('click', () => { curView = 'table'; document.getElementById('table-view').classList.remove('hidden'); document.getElementById('grid-view').classList.add('hidden'); document.getElementById('vt').classList.add('active'); document.getElementById('vg').classList.remove('active'); renderAll(); });
+
+        /* ── Quiz logic ── */
+        let quizStep = 1, quizAnswers = {};
+        const maxStep = 4;
+        const recMap = {
+            protect: { result: 'Based on your goal of protecting your family, we recommend a <strong>Term Life Insurance</strong> plan with a sum assured of at least 15× your annual income.', tags: ['Term Life', 'Critical Illness Rider'] },
+            health: { result: 'Your priority for medical coverage makes a <strong>comprehensive Health Insurance</strong> plan essential — ideally a family floater with ₹25–50 Lakh cover and zero co-pay.', tags: ['Health Insurance', 'Family Floater'] },
+            grow: { result: 'To grow wealth while staying protected, a <strong>ULIP Plan</strong> offers the best of both worlds — market-linked returns plus life cover. Horizon of 10+ years is ideal.', tags: ['ULIP', 'Market-Linked Returns'] },
+            legacy: { result: 'For long-term legacy creation, we recommend an <strong>Endowment or Child Plan</strong> — providing guaranteed returns, life cover and a structured corpus at maturity.', tags: ['Endowment Plan', 'Child Plan'] },
+        };
+
+        function selectOpt(el, qid) {
+            el.closest('.space-y-3').querySelectorAll('.qopt').forEach(o => o.classList.remove('selected'));
+            el.classList.add('selected');
+            quizAnswers[qid] = el.dataset.val;
+            const btn = document.getElementById('quiz-next');
+            btn.disabled = false; btn.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+        function quizNext() {
+            if (!quizAnswers['q' + quizStep]) return;
+            if (quizStep < maxStep) {
+                document.getElementById('qs' + quizStep).classList.remove('active');
+                quizStep++;
+                document.getElementById('qs' + quizStep).classList.add('active');
+                document.getElementById('quiz-prog').style.width = (quizStep / maxStep * 100) + '%';
+                document.getElementById('quiz-step-label').textContent = quizStep + ' / ' + maxStep;
+                document.getElementById('quiz-back').classList.remove('invisible');
+                const hasAns = !!quizAnswers['q' + quizStep];
+                const btn = document.getElementById('quiz-next');
+                btn.disabled = !hasAns; btn.classList.toggle('opacity-50', !hasAns); btn.classList.toggle('cursor-not-allowed', !hasAns);
+                if (quizStep === maxStep) { btn.textContent = 'See Results'; btn.innerHTML = 'See Results <span class="material-symbols-outlined text-sm">arrow_forward</span>'; }
+            } else {
+                document.getElementById('qs' + quizStep).classList.remove('active');
+                const rec = recMap[quizAnswers['q1']] || recMap['protect'];
+                document.getElementById('quiz-result-text').innerHTML = rec.result;
+                const tagsEl = document.getElementById('quiz-result-tags');
+                tagsEl.innerHTML = rec.tags.map(t => `<span class="text-xs text-brand-gold border border-brand-gold/30 bg-brand-gold/8 px-3 py-1 rounded-full">${t}</span>`).join('');
+                document.getElementById('qs-result').classList.add('active');
+                document.getElementById('quiz-nav').classList.add('hidden');
+                document.getElementById('quiz-prog').style.width = '100%';
+                document.getElementById('quiz-step-label').textContent = 'Done!';
+            }
+        }
+        function quizBack() {
+            if (quizStep <= 1) return;
+            document.getElementById('qs' + quizStep).classList.remove('active');
+            quizStep--;
+            document.getElementById('qs' + quizStep).classList.add('active');
+            document.getElementById('quiz-prog').style.width = (quizStep / maxStep * 100) + '%';
+            document.getElementById('quiz-step-label').textContent = quizStep + ' / ' + maxStep;
+            if (quizStep === 1) document.getElementById('quiz-back').classList.add('invisible');
+            const btn = document.getElementById('quiz-next');
+            const hasAns = !!quizAnswers['q' + quizStep];
+            btn.disabled = !hasAns; btn.classList.toggle('opacity-50', !hasAns); btn.classList.toggle('cursor-not-allowed', !hasAns);
+            btn.innerHTML = 'Next <span class="material-symbols-outlined text-sm">arrow_forward</span>';
+        }
+        function resetQuiz() {
+            quizStep = 1; quizAnswers = {};
+            document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+            document.getElementById('qs1').classList.add('active');
+            document.querySelectorAll('.qopt').forEach(o => o.classList.remove('selected'));
+            document.getElementById('quiz-prog').style.width = '25%';
+            document.getElementById('quiz-step-label').textContent = '1 / 4';
+            document.getElementById('quiz-back').classList.add('invisible');
+            document.getElementById('quiz-nav').classList.remove('hidden');
+            const btn = document.getElementById('quiz-next'); btn.disabled = true; btn.classList.add('opacity-50', 'cursor-not-allowed');
+            btn.innerHTML = 'Next <span class="material-symbols-outlined text-sm">arrow_forward</span>';
+        }
+
+        /* ── FAQs render ── */
+        const fc = document.getElementById('faq-container');
+        faqs.forEach((f, i) => {
+            const el = document.createElement('details');
+            el.className = 'faq-item reveal group'; el.style.transitionDelay = `${i * 0.04}s`;
+            el.innerHTML = `<summary class="flex items-center justify-between p-5 cursor-pointer list-none gap-3"><span class="text-white font-medium text-sm">${f.q}</span><span class="faq-icon material-symbols-outlined text-brand-gold flex-shrink-0">add</span></summary><div class="px-5 pb-5 text-brand-muted text-sm leading-relaxed">${f.a}</div>`;
+            fc.appendChild(el);
+        });
+
+        /* ── Modal ── */
+        function openModal(id) {
+            const banner = document.getElementById('modal-plan-banner');
+            if (id) {
+                const p = plans.find(x => x.id === id);
+                if (p) {
+                    document.getElementById('modal-plan-name').textContent = p.name;
+                    document.getElementById('modal-plan-meta').textContent = `${p.type} · ${p.insurer} · ${p.premium}`;
+                    banner.classList.remove('hidden'); banner.classList.add('flex');
+                }
+            } else { banner.classList.add('hidden'); banner.classList.remove('flex'); }
+            document.getElementById('enquiry-modal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() { document.getElementById('enquiry-modal').classList.remove('open'); document.body.style.overflow = ''; }
+        document.getElementById('enquiry-modal').addEventListener('click', e => { if (e.target === document.getElementById('enquiry-modal')) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        document.getElementById('modal-form').addEventListener('submit', async e => {
+            e.preventDefault();
+            const txt = document.getElementById('m-txt'), spin = document.getElementById('m-spin');
+            txt.textContent = 'Sending…'; spin.classList.remove('hidden');
+            await new Promise(r => setTimeout(r, 1700));
+            spin.classList.add('hidden'); txt.textContent = 'Get Free Advisory';
+            closeModal(); document.getElementById('modal-form').reset();
+            ['m-type', 'm-budget'].forEach(id => document.getElementById(id).closest('.mf').classList.remove('filled'));
+            document.getElementById('success-overlay').classList.add('show');
+        });
+        ['m-type', 'm-budget'].forEach(id => {
+            document.getElementById(id).addEventListener('change', function () { this.closest('.mf').classList.toggle('filled', !!this.value); });
+        });
+
+        /* ── Scroll behaviours ── */
+        const nav = document.getElementById('topnav'), fc2 = document.getElementById('float-cta');
+        window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); fc2.classList.toggle('show', window.scrollY > 400); });
+
+        /* ── Reveal ── */
+        const rvio = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('up'); rvio.unobserve(e.target); } }); }, { threshold: .1 });
+        document.querySelectorAll('.reveal,.reveal-l,.reveal-r,.faq-item').forEach(el => rvio.observe(el));
+
+        /* ── Init ── */
+        renderAll();
+
+        /* ── Newsletter Subscription ── */
+        const subscribeBtn = document.getElementById('subscribe-btn');
+        const emailInput = document.getElementById('subscriber-email');
+
+        if (subscribeBtn && emailInput) {
+            subscribeBtn.addEventListener('click', async () => {
+                const email = emailInput.value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!email || !emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                try {
+                    subscribeBtn.disabled = true;
+                    subscribeBtn.textContent = 'Subscribing...';
+
+                    const response = await fetch('/subscribe', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ email })
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok) {
+                        alert(result.message);
+                        emailInput.value = '';
+                    } else {
+                        alert(result.message || "Something went wrong. Please try again.");
+                    }
+                } catch (error) {
+                    console.error("Subscription Error:", error);
+                    alert("Failed to connect to the server. Please check your connection.");
+                } finally {
+                    subscribeBtn.disabled = false;
+                    subscribeBtn.textContent = 'Subscribe';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

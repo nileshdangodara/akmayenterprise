@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Unlisted Share Details | AKMAY Enterprise LLP</title>
+    <meta name="description" id="page-desc"
+        content="Buy and sell unlisted shares at best institutional prices through AKMAY Enterprise LLP. Expert-guided, SEBI-compliant." />
+    <meta name="robots" content="index, follow" />
+
+    <script type="application/ld+json" id="ld-json">
+  {"@context":"https://schema.org","@type":"FinancialProduct","name":"Unlisted Share","provider":{"@type":"Organization","name":"AKMAY Enterprise LLP","url":"https://akmayenterprise.in"}}
+  </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { brand: { navy: '#08152A', navy2: '#0D1E38', gold: '#C5A059', gold2: '#E5D5B7', slate: '#F0F4F8', muted: '#8A9BB0' } }, fontFamily: { display: ['"Cormorant Garamond"', 'serif'], body: ['"ROBOTO"', 'sans-serif'] } } } }</script>
+
+    <style>
+        :root {
+            --navy: #08152A;
+            --navy2: #0D1E38;
+            --gold: #C5A059;
+            --gold2: #E5D5B7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+            opacity: .5;
+        }
+
+        #topnav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transition: background .4s, border-color .4s, padding .3s;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid transparent;
+        }
+
+        #topnav.scrolled {
+            background: rgba(8, 21, 42, 0.75);
+            backdrop-filter: blur(20px);
+            border-bottom-color: rgba(197, 160, 89, .1);
+            padding: .75rem 0;
+        }
+
+        .nav-drop {
+            position: relative;
+        }
+
+        .nav-drop-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(8px);
+            min-width: 200px;
+            background: rgba(8, 21, 42, .97);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(197, 160, 89, .2);
+            border-radius: 1rem;
+            padding: .5rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .25s, transform .25s;
+        }
+
+        .nav-drop:hover .nav-drop-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        #mobile-menu {
+            display: none;
+            background: rgba(8, 21, 42, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+
+        #mob-toggle:checked~#mobile-menu {
+            display: block;
+        }
+
+        .gold-text {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 45%, #C5A059 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gline {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold2) 60%, var(--gold) 80%, transparent);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, .035);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(197, 160, 89, .18);
+        }
+
+        .sec-label {
+            font-size: .65rem;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: rgba(197, 160, 89, .6);
+            font-weight: 600;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, #C5A059 0%, #E5D5B7 50%, #C5A059 100%);
+            background-size: 200% auto;
+            color: #08152A;
+            font-weight: 700;
+            transition: background-position .5s, transform .2s, box-shadow .3s;
+        }
+
+        .btn-gold:hover {
+            background-position: right center;
+            transform: translateY(-2px);
+            box-shadow: 0 16px 40px rgba(197, 160, 89, .3);
+        }
+
+        .btn-ghost {
+            border: 1px solid rgba(197, 160, 89, .45);
+            color: var(--gold2);
+            font-weight: 600;
+            transition: background .3s, border-color .3s, transform .2s;
+        }
+
+        .btn-ghost:hover {
+            background: rgba(197, 160, 89, .08);
+            border-color: rgba(197, 160, 89, .7);
+            transform: translateY(-2px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .65s ease, transform .65s cubic-bezier(.23, 1, .32, 1);
+        }
+
+        .reveal.up {
+            opacity: 1;
+            transform: none;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(28px)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .ha1 {
+            animation: fadeUp .8s cubic-bezier(.23, 1, .32, 1) .1s both;
+        }
+
+        .ha2 {
+            animation: fadeUp .8s cubic-bezier(.23, 1, .32, 1) .22s both;
+        }
+
+        .ha3 {
+            animation: fadeUp .8s cubic-bezier(.23, 1, .32, 1) .35s both;
+        }
+
+        /* Sticky card */
+        #side-card {
+            position: sticky;
+            top: 6.5rem;
+        }
+
+        /* Chart period tabs */
+        .ptab {
+            padding: .35rem .9rem;
+            border-radius: 9999px;
+            font-size: .75rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid rgba(197, 160, 89, .2);
+            color: rgba(240, 244, 248, .45);
+            transition: all .2s;
+            background: transparent;
+        }
+
+        .ptab:hover {
+            background: rgba(197, 160, 89, .08);
+            color: rgba(240, 244, 248, .8);
+        }
+
+        .ptab.active {
+            background: rgba(197, 160, 89, .18);
+            border-color: rgba(197, 160, 89, .5);
+            color: #C5A059;
+        }
+
+        /* Detail tabs */
+        .dtab {
+            padding: .45rem 1.1rem;
+            border-radius: 9999px;
+            font-size: .78rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid rgba(197, 160, 89, .18);
+            color: rgba(240, 244, 248, .45);
+            transition: all .2s;
+            background: transparent;
+            white-space: nowrap;
+        }
+
+        .dtab:hover {
+            background: rgba(197, 160, 89, .08);
+            color: rgba(240, 244, 248, .8);
+        }
+
+        .dtab.active {
+            background: rgba(197, 160, 89, .18);
+            border-color: rgba(197, 160, 89, .5);
+            color: #C5A059;
+        }
+
+        .dtab-section {
+            display: none;
+        }
+
+        .dtab-section.active {
+            display: block;
+        }
+
+        /* Fundamentals grid */
+        .fund-cell {
+            border-bottom: 1px solid rgba(197, 160, 89, .07);
+            padding: .7rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .fund-cell:last-child {
+            border-bottom: none;
+        }
+
+        /* Buy/Sell form */
+        .bs-tab {
+            flex: 1;
+            text-align: center;
+            padding: .6rem 1rem;
+            border-radius: .625rem;
+            font-size: .85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .25s;
+        }
+
+        .bs-tab.buy-active {
+            background: rgba(52, 211, 153, .15);
+            border: 1.5px solid #34D399;
+            color: #34D399;
+        }
+
+        .bs-tab.sell-active {
+            background: rgba(248, 113, 113, .15);
+            border: 1.5px solid #F87171;
+            color: #F87171;
+        }
+
+        .bs-tab.inactive {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid rgba(255, 255, 255, .1);
+            color: rgba(240, 244, 248, .35);
+        }
+
+        input.qty-input,
+        textarea.qty-input {
+            background: rgba(255, 255, 255, .05);
+            border: 1px solid rgba(197, 160, 89, .25);
+            border-radius: .625rem;
+            padding: .6rem 1rem;
+            color: #F0F4F8;
+            font-size: .9rem;
+            font-family: "DM Sans", sans-serif;
+            width: 100%;
+            outline: none;
+            transition: border-color .3s, box-shadow .3s;
+        }
+
+        input.qty-input:focus,
+        textarea.qty-input:focus {
+            border-color: rgba(197, 160, 89, .6);
+            box-shadow: 0 0 0 1px rgba(197, 160, 89, .6);
+        }
+
+        /* FAQ */
+        .faq-item {
+            border: 1px solid rgba(197, 160, 89, .12);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: border-color .3s;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(197, 160, 89, .35);
+        }
+
+        .faq-icon {
+            transition: transform .3s;
+            display: inline-block;
+        }
+
+        details[open] .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Fin table */
+        .fin-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: .5rem;
+            align-items: center;
+            padding: .65rem 1.25rem;
+            border-bottom: 1px solid rgba(197, 160, 89, .06);
+        }
+
+        .fin-row:last-child {
+            border-bottom: none;
+        }
+
+        .fin-hdr {
+            background: rgba(255, 255, 255, .03);
+        }
+
+        /* Alert form */
+        input.alert-input {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid rgba(197, 160, 89, .2);
+            border-radius: .625rem;
+            padding: .5rem .85rem;
+            color: #F0F4F8;
+            font-size: .8rem;
+            font-family: "DM Sans", sans-serif;
+            width: 100%;
+            outline: none;
+            transition: border-color .3s, box-shadow .3s;
+        }
+
+        input.alert-input:focus {
+            border-color: rgba(197, 160, 89, .5);
+            box-shadow: 0 0 0 1px rgba(197, 160, 89, .5);
+        }
+
+        input.alert-input::placeholder {
+            color: rgba(240, 244, 248, .25);
+        }
+
+        /* Success overlay */
+        #success-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgba(8, 21, 42, .96);
+            backdrop-filter: blur(12px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        #success-overlay.show {
+            display: flex;
+        }
+
+        /* Float CTA */
+        #float-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 90;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity .4s, transform .4s;
+            pointer-events: none;
+        }
+
+        #float-cta.show {
+            opacity: 1;
+            transform: none;
+            pointer-events: auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--navy);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(197, 160, 89, .4);
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="font-body text-brand-slate overflow-x-hidden" style="background:#08152A;">
+
+    <button id="float-cta" onclick="document.getElementById('buy-section').scrollIntoView({behavior:'smooth'})"
+        class="btn-gold flex items-center gap-2 px-5 py-3 rounded-full shadow-2xl text-sm font-semibold">
+        <span class="material-symbols-outlined text-base">shopping_cart</span> Buy / Sell
+    </button>
+
+    <!-- ══ NAV ══ -->
+    <nav id="topnav" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="/images/logo.webp" alt="AKMAY Enterprise LLP" class="h-16 w-auto" />
+                    <span
+                        class="font-body font-semibold text-white text-base tracking-tight group-hover:text-brand-gold transition-colors">AKMAY
+                        Enterprise LLP</span>
+                </a>
+
+                <!-- Desktop links -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#about" class="au text-sm text-white/70 hover:text-white transition-colors">About</a>
+
+                    <div class="nav-drop">
+                        <button
+                            class="flex items-center gap-1 text-sm text-white/70 hover:text-white transition-colors py-2">
+                            Services <span class="material-symbols-outlined text-sm">expand_more</span>
+                        </button>
+                        <div class="nav-drop-menu">
+                            <a href="/pre-ipo"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Pre-IPO
+                                Equity</a>
+                            <a href="/mutual-funds"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Mutual
+                                Funds</a>
+                            <a href="/unlisted-shares"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Unlisted
+                                Shares</a>
+                            <a href="/insurance"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Insurance</a>
+                            <a href="/physicaltodemat"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Physical
+                                to Demat</a>
+                            <a href="/fixed-deposits"
+                                class="block px-4 py-2.5 text-sm text-white/60 hover:text-brand-gold hover:bg-brand-gold/8 rounded-lg transition-colors">Fixed
+                                Deposits</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="au text-sm text-white/70 hover:text-white transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA + hamburger -->
+                <div class="hidden lg:flex items-center gap-4">
+                    <a href="/contact" class="btn-gold px-5 py-2.5 rounded-lg text-sm">Get Started</a>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="lg:hidden">
+                    <input id="mob-toggle" type="checkbox" class="hidden" />
+                    <label for="mob-toggle" class="cursor-pointer p-2 hover:bg-white/10 rounded-lg block">
+                        <span class="material-symbols-outlined text-white text-3xl">menu</span>
+                    </label>
+                    <div id="mobile-menu"
+                        class="absolute top-full left-0 w-full border-b border-brand-gold/15 py-4 shadow-2xl">
+                        <div class="flex flex-col gap-1 px-4">
+                            <a href="/"
+                                class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">About</a>
+                            <div>
+                                <input id="mob-svc" type="checkbox" class="hidden mob-drop-toggle" />
+                                <label for="mob-svc"
+                                    class="flex items-center justify-between py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl cursor-pointer text-sm">
+                                    Services <span
+                                        class="material-symbols-outlined di transition-transform">expand_more</span>
+                                </label>
+                                <div class="mob-drop-content pl-4 pb-2 space-y-1">
+                                    <a href="/pre-ipo"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Pre-IPO
+                                        Equity</a>
+                                    <a href="/mutual-funds"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Mutual
+                                        Funds</a>
+                                    <a href="/unlisted-shares"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Unlisted
+                                        Shares</a>
+                                    <a href="/insurance"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Insurance</a>
+                                    <a href="/physicaltodemat"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Physical to
+                                        Demat</a>
+                                    <a href="/fixed-deposits"
+                                        class="block py-2 px-4 text-xs text-white/50 hover:text-brand-gold">Fixed
+                                        Deposits</a>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="/contact"
+                                    class="block py-3 px-4 text-white/70 hover:text-brand-gold hover:bg-brand-gold/5 rounded-xl text-sm">Contact</a>
+                            </div>
+
+                            <a href="/contact" class="block mt-2 btn-gold py-3 px-4 rounded-xl text-sm text-center">Get
+                                Started →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- ══ HERO ══ -->
+    <section class="relative overflow-hidden pt-28 pb-10"
+        style="background:radial-gradient(ellipse 75% 50% at 60% 25%,rgba(197,160,89,.08) 0%,transparent 60%),linear-gradient(155deg,#08152A 0%,#0D1E38 55%,#08152A 100%);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <nav aria-label="Breadcrumb" class="mb-7 ha1">
+                <ol class="flex items-center gap-2 text-xs text-white/30">
+                    <li><a href="/" class="hover:text-brand-gold transition-colors">Home</a></li>
+                    <li><span class="material-symbols-outlined text-xs">chevron_right</span></li>
+                    <li><a href="unlisted-shares.html" class="hover:text-brand-gold transition-colors">Unlisted
+                            Shares</a></li>
+                    <li><span class="material-symbols-outlined text-xs">chevron_right</span></li>
+                    <li class="text-brand-gold" id="bc-name">Company</li>
+                </ol>
+            </nav>
+
+            <!-- Company header -->
+            <div class="flex items-start gap-5 ha2">
+                <div id="hero-avatar"
+                    class="w-16 h-16 rounded-2xl flex items-center justify-center overflow-hidden font-display font-bold text-2xl flex-shrink-0 border border-white/10"
+                    style="background:rgba(197,160,89,.15);color:#C5A059;"></div>
+                <div class="flex-1 min-w-0">
+                    <div class="flex flex-wrap items-center gap-2 mb-1">
+                        <span id="hero-sector-tag"
+                            class="text-xs border border-brand-gold/25 text-brand-gold/70 px-2 py-0.5 rounded-full"></span>
+                        <span
+                            class="text-xs border border-white/10 text-white/35 px-2 py-0.5 rounded-full">Unlisted</span>
+                        <span id="hero-isin" class="text-xs text-white/25">ISIN: —</span>
+                    </div>
+                    <h1 class="font-display text-3xl lg:text-5xl text-white font-bold leading-tight" id="hero-name">
+                        Loading…</h1>
+
+                    <!-- Price row -->
+                    <div class="flex flex-wrap items-end gap-4 mt-4">
+                        <div>
+                            <p class="text-white/30 text-xs mb-0.5">Current Price</p>
+                            <p class="font-display text-4xl text-white font-bold" id="hero-price">—</p>
+                        </div>
+                        <div id="hero-change-wrap" class="pb-1">
+                            <span id="hero-chg-badge" class="text-sm font-semibold px-3 py-1 rounded-full"></span>
+                            <span class="text-white/30 text-xs ml-2">15 Days</span>
+                        </div>
+                        <div class="pb-1">
+                            <p class="text-white/30 text-xs mb-0.5">52w High / Low</p>
+                            <p class="text-white font-semibold text-sm" id="hero-52">—</p>
+                        </div>
+                        <div class="pb-1">
+                            <p class="text-white/30 text-xs mb-0.5">Market Cap</p>
+                            <p class="text-brand-gold font-semibold text-sm" id="hero-mcap">—</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ TAB NAV ══ -->
+    <div class="sticky top-20 z-40 bg-brand-navy border-b border-brand-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex gap-2 py-3 overflow-x-auto">
+                <button class="dtab active" data-dt="overview">Overview</button>
+                <button class="dtab" data-dt="fundamentals">Fundamentals</button>
+                <button class="dtab" data-dt="financials">Financials</button>
+                <button class="dtab" data-dt="howto">How to Buy/Sell</button>
+                <button class="dtab" data-dt="faq">FAQ</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ MAIN ══ -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid lg:grid-cols-3 gap-10 items-start">
+
+            <!-- ── LEFT ── -->
+            <div class="lg:col-span-2 space-y-6">
+
+                <!-- OVERVIEW -->
+                <div class="dtab-section active" id="dt-overview">
+                    <!-- Chart -->
+                    <div class="glass rounded-2xl p-6 mb-5 reveal">
+                        <div class="flex items-center justify-between mb-5">
+                            <p class="sec-label">Price History</p>
+                            <div class="flex gap-1" id="period-tabs">
+                                <button class="ptab" data-p="1m">1M</button>
+                                <button class="ptab active" data-p="6m">6M</button>
+                                <button class="ptab" data-p="1y">1Y</button>
+                                <button class="ptab" data-p="3y">3Y</button>
+                                <button class="ptab" data-p="max">Max</button>
+                            </div>
+                        </div>
+                        <div class="relative" style="height:220px;">
+                            <canvas id="price-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- About -->
+                    <div class="glass rounded-2xl p-6 mb-5 reveal">
+                        <p class="sec-label mb-4">About the Company</p>
+                        <div id="about-text" class="text-brand-muted text-sm leading-relaxed space-y-3"></div>
+                    </div>
+
+                    <!-- Products & Services -->
+                    <div class="glass rounded-2xl p-6 reveal" id="products-section">
+                        <p class="sec-label mb-4">Products & Services</p>
+                        <div id="products-text" class="text-brand-muted text-sm leading-relaxed"></div>
+                    </div>
+                </div>
+
+                <!-- FUNDAMENTALS -->
+                <div class="dtab-section" id="dt-fundamentals">
+                    <div class="glass rounded-2xl overflow-hidden reveal">
+                        <p class="sec-label p-5 pb-0">Key Fundamentals</p>
+                        <div id="fund-grid" class="mt-3"></div>
+                    </div>
+                </div>
+
+                <!-- FINANCIALS -->
+                <div class="dtab-section" id="dt-financials">
+                    <!-- Toggle -->
+                    <div class="flex gap-2 mb-5">
+                        <button class="ptab active" id="fin-q-btn" onclick="showFin('q')">Quarterly</button>
+                        <button class="ptab" id="fin-y-btn" onclick="showFin('y')">Yearly</button>
+                    </div>
+                    <div class="glass rounded-2xl overflow-hidden reveal">
+                        <div id="fin-quarterly">
+                            <div class="fin-row fin-hdr text-xs text-white/30 uppercase tracking-wider font-semibold">
+                                <span>Quarter</span><span class="text-right">Revenue (Cr)</span><span
+                                    class="text-right">EBITDA (Cr)</span><span class="text-right">PAT (Cr)</span>
+                            </div>
+                            <div id="fin-q-body"></div>
+                        </div>
+                        <div id="fin-yearly" class="hidden">
+                            <div class="fin-row fin-hdr text-xs text-white/30 uppercase tracking-wider font-semibold">
+                                <span>Year</span><span class="text-right">Revenue (Cr)</span><span
+                                    class="text-right">EBITDA (Cr)</span><span class="text-right">PAT (Cr)</span>
+                            </div>
+                            <div id="fin-y-body"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HOW TO BUY/SELL -->
+                <div class="dtab-section" id="dt-howto">
+                    <div class="grid md:grid-cols-2 gap-5 reveal">
+                        <!-- Buy steps -->
+                        <div class="glass rounded-2xl p-6">
+                            <p class="sec-label mb-5 flex items-center gap-2"><span
+                                    class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>How to Buy</p>
+                            <ol class="space-y-4">
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-xs font-bold flex-shrink-0">1</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Confirm the price and quantity
+                                        with our advisor at current market rate.</p>
+                                </li>
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-xs font-bold flex-shrink-0">2</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Submit KYC documents: Client
+                                        Master Report (CMR) + PAN Card + Cancelled Cheque.</p>
+                                </li>
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-xs font-bold flex-shrink-0">3</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Transfer funds via
+                                        RTGS/NEFT/IMPS to our designated bank account. No cash accepted.</p>
+                                </li>
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-emerald-500/15 border border-emerald-500/25 flex items-center justify-center text-emerald-400 text-xs font-bold flex-shrink-0">4</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Shares credited to your Demat
+                                        account within T+2 working days via off-market transfer.</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <!-- Sell steps -->
+                        <div class="glass rounded-2xl p-6">
+                            <p class="sec-label mb-5 flex items-center gap-2"><span
+                                    class="w-2 h-2 rounded-full bg-red-400 inline-block"></span>How to Sell</p>
+                            <ol class="space-y-4">
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-red-500/15 border border-red-500/25 flex items-center justify-center text-red-400 text-xs font-bold flex-shrink-0">1</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Share your intent to sell and
+                                        the quantity. Our team provides the best available buy price.</p>
+                                </li>
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-red-500/15 border border-red-500/25 flex items-center justify-center text-red-400 text-xs font-bold flex-shrink-0">2</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Transfer shares from your Demat
+                                        via off-market transfer (DIS slip or CDSL/NSDL online).</p>
+                                </li>
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-red-500/15 border border-red-500/25 flex items-center justify-center text-red-400 text-xs font-bold flex-shrink-0">3</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Once shares are received,
+                                        payment is credited to your bank account within T+1 day.</p>
+                                </li>
+                                <li class="flex gap-3"><span
+                                        class="w-6 h-6 rounded-full bg-red-500/15 border border-red-500/25 flex items-center justify-center text-red-400 text-xs font-bold flex-shrink-0">4</span>
+                                    <p class="text-brand-muted text-xs leading-relaxed">Applicable taxes (LTCG/STCG) are
+                                        your responsibility. Consult your CA for advice.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="glass rounded-xl p-4 flex items-start gap-3 mt-5 reveal">
+                        <span class="material-symbols-outlined text-brand-gold flex-shrink-0 mt-0.5 text-sm">info</span>
+                        <p class="text-brand-muted text-xs leading-relaxed">STCG (held &lt;24 months) taxed at slab
+                            rate. LTCG (held &gt;24 months) taxed at 20% with indexation. Minimum short-term capital
+                            gains tax applies in both cases.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ -->
+                <div class="dtab-section" id="dt-faq">
+                    <div class="space-y-3" id="faq-container"></div>
+                </div>
+
+            </div>
+
+            <!-- ── RIGHT: Sticky ── -->
+            <div id="side-card" class="lg:col-span-1 space-y-5">
+                <div class="glass rounded-2xl p-5">
+                    <p class="sec-label mb-4">Quick Facts</p>
+                    <div class="space-y-2.5" id="quick-facts"></div>
+                </div>
+                <!-- Buy/Sell form -->
+                <div class="glass rounded-2xl p-6" id="buy-section">
+                    <div class="flex gap-2 mb-6">
+                        <div class="bs-tab buy-active" id="bs-buy" onclick="setBS('buy')">Buy</div>
+                        <div class="bs-tab inactive" id="bs-sell" onclick="setBS('sell')">Sell</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-white/30 text-xs mb-1.5">Price per share</p>
+                        <p class="font-display text-3xl text-white font-bold" id="side-price">—</p>
+                        <p class="text-brand-muted text-xs mt-0.5">Best in industry</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <p class="text-white/30 text-xs mb-1.5">Quantity (in lots · 1 lot = <span
+                                id="lot-label">—</span> shares)</p>
+                        <input type="number" id="qty-input" class="qty-input" min="1" value="1" max="100"
+                            placeholder="Enter lots" />
+                    </div>
+
+                    <div class="bg-white/3 rounded-xl p-3 mb-5 space-y-2">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-white/40">Shares</span>
+                            <span class="text-white font-semibold" id="calc-shares">—</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-white/40">Approx. Value</span>
+                            <span class="text-brand-gold font-bold" id="calc-value">—</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="text-white/30 text-xs block mb-1.5">Your Name</label>
+                        <input type="text" id="bs-name" class="qty-input" placeholder="Full name" />
+                    </div>
+                    <div class="mb-4">
+                        <label class="text-white/30 text-xs block mb-1.5"> Email</label>
+                        <input type="text" id="bs-contact" class="qty-input" placeholder="Contact detail" />
+                    </div>
+                    <div class="mb-5">
+                        <label class="text-white/30 text-xs block mb-1.5">Message (Optional)</label>
+                        <textarea id="bs-msg" class="qty-input" rows="2" placeholder="Any specific questions…"
+                            style="resize:none;"></textarea>
+                    </div>
+
+                    <button id="bs-submit"
+                        class="btn-gold w-full py-3.5 rounded-xl text-sm flex items-center justify-center gap-2 group"
+                        onclick="submitBS()">
+                        <span id="bs-btn-txt">Submit Buy Request</span>
+                        <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-0.5 transition-transform">send</span>
+                    </button>
+                    <p class="text-xs text-white/20 text-center mt-3">· KYC
+                        required · </p>
+                </div>
+
+
+
+                <!-- Key Data card -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ══ FOOTER ══ -->
+    <footer class="bg-brand-navy pt-20 pb-10 border-t border-brand-gold/15">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="/images/logo.webp" alt="AKMAY Logo" class="h-20" />
+                        <span class="text-white font-semibold">AKMAY Enterprise LLP</span>
+                    </div>
+                    <p class="text-brand-muted text-sm leading-relaxed mb-6">
+                        Institutional-grade investment advisory for discerning investors. Expertise, integrity,
+                        strategic growth.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" aria-label="Share"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">share</span>
+                        </a>
+                        <a href="mailto:nilesh1321910@gmail.com" aria-label="Contact"
+                            class="w-9 h-9 rounded-lg glass flex items-center justify-center text-white/30 hover:text-brand-gold hover:border-brand-gold/40 transition-colors">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Solutions -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Solutions</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Pre-IPO Equity</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Mutual Funds</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Unlisted Shares</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Insurance Advisory</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Fixed Deposits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Services</h3>
+                    <ul class="space-y-3 text-sm text-brand-muted">
+                        <li><a href="#services" class="hover:text-white transition-colors">Physical to Demat</a></li>
+                        <li><a href="#process" class="hover:text-white transition-colors">Portfolio Audit</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">Wealth Planning</a></li>
+                        <li><a href="/contact" class="hover:text-white transition-colors">SIP Calculator</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-brand-gold font-semibold text-xs uppercase tracking-widest mb-6">Stay Informed</h3>
+                    <p class="text-brand-muted text-sm mb-5 leading-relaxed">Weekly market intelligence and exclusive
+                        unlisted opportunities.</p>
+                    <div class="flex flex-col gap-3">
+                        <input type="email" id="subscriber-email" placeholder="your@email.com"
+                            class="w-full bg-white/5 border border-brand-gold/20 rounded-lg py-2.5 px-4 text-sm text-white placeholder:text-white/20 focus:outline-none focus:border-brand-gold transition-colors" />
+                        <button id="subscribe-btn"
+                            class="btn-gold py-2.5 rounded-lg text-sm font-bold w-full disabled:opacity-50 disabled:cursor-not-allowed">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gline mb-8"></div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-white/20">© 2024 AKMAY Enterprise LLP. All rights reserved.</p>
+                <div class="flex flex-wrap justify-center gap-5 text-xs text-white/20">
+                    <a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">Disclaimer</a>
+                    <a href="#" class="hover:text-brand-gold transition-colors">SEBI Compliance</a>
+                    <a href="/contact" class="hover:text-brand-gold transition-colors">Contact Us</a>
+                </div>
+            </div>
+
+            <p class="text-xs text-white/15 mt-6 text-center max-w-2xl mx-auto leading-relaxed">
+                Investment in securities market is subject to market risks. Read all the related documents carefully
+                before investing. Past performance is not indicative of future returns. AKMAY Enterprise LLP facilitates
+                transactions through SEBI-registered entities.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Success overlay -->
+    <div id="success-overlay">
+        <div class="max-w-md w-full text-center">
+            <div
+                class="w-16 h-16 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center mx-auto mb-6">
+                <span class="material-symbols-outlined text-brand-gold text-3xl">check_circle</span>
+            </div>
+            <h2 class="font-display text-3xl text-white font-semibold mb-3" id="success-title">Request Received</h2>
+            <p class="text-brand-muted text-sm mb-8 max-w-sm mx-auto" id="success-msg">An AKMAY advisor will contact you
+                within one business day.</p>
+            <button onclick="document.getElementById('success-overlay').classList.remove('show')"
+                class="btn-gold px-8 py-3 rounded-xl text-sm">Back to Page</button>
+        </div>
+    </div>
+    <script id="unlisted-data" type="application/json">
+        <%- JSON.stringify(share) %>
+    </script>
+    <script>
+        /* ── Load company from backend ── */
+
+        const co = JSON.parse(document.getElementById('unlisted-data').textContent);
+        const sectorColors = { Finance: '#3B82F6', Tech: '#8B5CF6', Healthcare: '#10B981', FMCG: '#F59E0B', Infra: '#6B7280', Energy: '#EF4444', Metals: '#A78BFA', Defence: '#FB923C' };
+        const sectorBg = { Finance: 'rgba(59,130,246,.18)', Tech: 'rgba(139,92,246,.18)', Healthcare: 'rgba(16,185,129,.18)', FMCG: 'rgba(245,158,11,.18)', Infra: 'rgba(107,114,128,.18)', Energy: 'rgba(239,68,68,.18)', Metals: 'rgba(167,139,250,.18)', Defence: 'rgba(251,146,60,.18)' };
+
+        function fmtINR(n) { if (!n && n !== 0) return '—'; return '₹' + Math.round(n).toLocaleString('en-IN'); }
+
+        /* ── Inject page meta ── */
+        document.title = `${co.name} Unlisted Share Price | Buy & Sell | AKMAY Enterprise LLP`;
+        document.getElementById('page-desc').content = `Buy and sell ${co.name} unlisted shares at best prices through AKMAY Enterprise LLP. Current price ₹${co.price}. SEBI-compliant, Demat-secured.`;
+        document.getElementById('bc-name').textContent = co.name;
+
+        /* ── Hero ── */
+        const av = document.getElementById('hero-avatar');
+        if (co.imglink) {
+            av.innerHTML = `<img src="${co.imglink}" class="w-full h-full object-cover" alt="${co.name}">`;
+            av.style.background = 'transparent';
+        } else {
+            av.textContent = co.short;
+            av.style.background = sectorBg[co.sector] || 'rgba(197,160,89,.15)';
+            av.style.color = sectorColors[co.sector] || '#C5A059';
+        }
+        document.getElementById('hero-name').textContent = co.name;
+        document.getElementById('hero-price').textContent = fmtINR(co.price);
+        document.getElementById('hero-52').textContent = `${fmtINR(co.high52)} / ${fmtINR(co.low52)}`;
+        document.getElementById('hero-mcap').textContent = co.mcap;
+        document.getElementById('hero-isin').textContent = `ISIN: ${co.isin}`;
+        document.getElementById('hero-sector-tag').textContent = co.sector;
+        const cb = document.getElementById('hero-chg-badge');
+        if (co.change === null) { cb.textContent = 'N/A'; cb.style.cssText = 'background:rgba(197,160,89,.12);border:1px solid rgba(197,160,89,.3);color:#C5A059;'; }
+        else if (co.change > 0) { cb.textContent = `▲ +${co.change}%`; cb.style.cssText = 'background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.25);color:#34D399;'; }
+        else { cb.textContent = `▼ ${co.change}%`; cb.style.cssText = 'background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.25);color:#F87171;'; }
+
+        /* ── Side card ── */
+        document.getElementById('side-price').textContent = fmtINR(co.price);
+        document.getElementById('lot-label').textContent = co.lot.toLocaleString('en-IN');
+        function calcBSValues() {
+            const lots = parseInt(document.getElementById('qty-input').value) || 1;
+            const shares = lots * co.lot;
+            const val = shares * co.price;
+            document.getElementById('calc-shares').textContent = shares.toLocaleString('en-IN') + ' shares';
+            document.getElementById('calc-value').textContent = fmtINR(val);
+        }
+        document.getElementById('qty-input').addEventListener('input', calcBSValues);
+        calcBSValues();
+
+        /* ── Quick facts ── */
+        const qf = document.getElementById('quick-facts');
+        [['Lot Size', co.lot.toLocaleString('en-IN') + ' shares'], ['Face Value', `₹${co.faceValue}`], ['ISIN', co.isin], ['PAN', co.pan], ['Depository', co.depository], ['RTA', co.rta], ['Market Cap', co.mcap]].forEach(([k, v]) => {
+            const d = document.createElement('div'); d.className = 'flex justify-between text-xs gap-2';
+            d.innerHTML = `<span class="text-white/35">${k}</span><span class="text-white font-medium text-right">${v}</span>`;
+            qf.appendChild(d);
+        });
+
+        /* ── About ── */
+        const at = document.getElementById('about-text');
+        (co.about || []).forEach(p => { const el = document.createElement('p'); el.textContent = p; at.appendChild(el); });
+        document.getElementById('products-text').textContent = co.products || '';
+
+        /* ── Fundamentals ── */
+        const fg = document.getElementById('fund-grid');
+        [['Current Price', fmtINR(co.price)], ['52 Week High', fmtINR(co.high52)], ['52 Week Low', fmtINR(co.low52)], ['Market Cap', co.mcap], ['P/E Ratio', co.pe], ['P/B Ratio', co.pb], ['ROE', co.roe], ['Debt to Equity', co.d2e], ['Book Value', `₹${co.bookValue}`], ['Face Value', `₹${co.faceValue}`], ['Total Shares', co.totalShares], ['ISIN', co.isin], ['PAN Number', co.pan], ['CIN', co.cin], ['Depository', co.depository], ['RTA', co.rta]].forEach(([k, v]) => {
+            const d = document.createElement('div'); d.className = 'fund-cell';
+            d.innerHTML = `<span class="text-white/45 text-sm">${k}</span><span class="text-white font-semibold text-sm text-right">${v || 'N/A'}</span>`;
+            fg.appendChild(d);
+        });
+
+        /* ── Financials ── */
+        function buildFinRow(data, cols) {
+            const row = document.createElement('div');
+            row.className = 'fin-row text-sm';
+            row.innerHTML = cols.map((v, i) => `<span class="${i === 0 ? 'text-white/60' : 'text-right font-semibold ' + (v < 0 ? 'text-red-400' : v > 0 ? 'text-white' : 'text-brand-muted')}">${i === 0 ? v : (v != null ? v.toLocaleString('en-IN') : '—')}</span>`).join('');
+            return row;
+        }
+        const qb = document.getElementById('fin-q-body');
+        (co.quarterly || []).forEach(r => qb.appendChild(buildFinRow(r, [r.q, r.rev, r.ebitda, r.pat])));
+        const yb = document.getElementById('fin-y-body');
+        (co.yearly || []).forEach(r => yb.appendChild(buildFinRow(r, [r.y, r.rev, r.ebitda, r.pat])));
+
+        function showFin(t) {
+            document.getElementById('fin-quarterly').classList.toggle('hidden', t !== 'q');
+            document.getElementById('fin-yearly').classList.toggle('hidden', t !== 'y');
+            document.getElementById('fin-q-btn').classList.toggle('active', t === 'q');
+            document.getElementById('fin-y-btn').classList.toggle('active', t === 'y');
+        }
+
+        /* ── FAQ ── */
+        const fc = document.getElementById('faq-container');
+        (co.faqs || []).forEach(f => {
+            const el = document.createElement('details'); el.className = 'faq-item group';
+            el.innerHTML = `<summary class="flex items-center justify-between p-5 cursor-pointer list-none gap-3"><span class="text-white font-medium text-sm">${f.q}</span><span class="faq-icon material-symbols-outlined text-brand-gold flex-shrink-0">add</span></summary><div class="px-5 pb-5 text-brand-muted text-sm leading-relaxed">${f.a}</div>`;
+            fc.appendChild(el);
+        });
+
+        /* ── Chart ── */
+        let chart, currentPeriod = '6m';
+
+        function generatePriceData(period) {
+            const basePrice = co.price; const low = co.low52; const high = co.high52;
+            const points = {
+                '1m': { count: 30, start: basePrice * (co.change > 0 ? .92 : .98) },
+                '6m': { count: 26, start: low * 1.05 },
+                '1y': { count: 52, start: low },
+                '3y': { count: 36, start: low * .85 },
+                'max': { count: 60, start: low * .7 },
+            }[period] || { count: 26, start: low * 1.05 };
+            const labels = [], data = [];
+            for (let i = 0; i < points.count; i++) {
+                const progress = i / (points.count - 1);
+                const trend = points.start + (basePrice - points.start) * Math.pow(progress, .7);
+                const noise = (Math.random() - .5) * (high - low) * .12;
+                data.push(Math.max(low * .9, Math.min(high * 1.05, trend + noise)));
+                if (period === 'max') labels.push(2020 + Math.floor(i / 12) + '-' + String((i % 12) + 1).padStart(2, '0'));
+                else if (period === '3y') labels.push('M' + (i + 1));
+                else if (period === '1y') labels.push('W' + (i + 1));
+                else labels.push(i + 1);
+            }
+            return { labels, data };
+        }
+
+        function buildChart(period) {
+            const { labels, data } = generatePriceData(period);
+            const isUp = data[data.length - 1] >= data[0];
+            const color = isUp ? '#34D399' : '#F87171';
+            const ctx = document.getElementById('price-chart').getContext('2d');
+            const grad = ctx.createLinearGradient(0, 0, 0, 220);
+            grad.addColorStop(0, isUp ? 'rgba(52,211,153,.2)' : 'rgba(248,113,113,.2)');
+            grad.addColorStop(1, 'rgba(8,21,42,0)');
+            if (chart) chart.destroy();
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: { labels, datasets: [{ data, borderColor: color, backgroundColor: grad, borderWidth: 2, pointRadius: 0, tension: .4, fill: true }] },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `₹${Math.round(ctx.raw).toLocaleString('en-IN')}` }, backgroundColor: 'rgba(13,30,56,.95)', borderColor: 'rgba(197,160,89,.3)', borderWidth: 1, titleColor: 'rgba(240,244,248,.6)', bodyColor: '#C5A059', bodyFont: { family: '"DM Sans"', size: 13, weight: 'bold' } } }, scales: { x: { display: false }, y: { display: true, grid: { color: 'rgba(197,160,89,.05)' }, ticks: { color: 'rgba(240,244,248,.3)', font: { size: 10 }, callback: v => `₹${Math.round(v).toLocaleString('en-IN')}` }, border: { display: false } } } },
+            });
+        }
+
+        document.querySelectorAll('.ptab').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('#period-tabs .ptab').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentPeriod = btn.dataset.p;
+                buildChart(currentPeriod);
+            });
+        });
+        buildChart('6m');
+
+        /* ── Buy/Sell toggle ── */
+        let bsMode = 'buy';
+        function setBS(mode) {
+            bsMode = mode;
+            document.getElementById('bs-buy').className = 'bs-tab ' + (mode === 'buy' ? 'buy-active' : 'inactive');
+            document.getElementById('bs-sell').className = 'bs-tab ' + (mode === 'sell' ? 'sell-active' : 'inactive');
+            document.getElementById('bs-btn-txt').textContent = mode === 'buy' ? 'Submit Buy Request' : 'Submit Sell Request';
+        }
+
+        /* ── Detail tabs ── */
+        document.querySelectorAll('.dtab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.dtab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.dtab-section').forEach(s => s.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('dt-' + tab.dataset.dt).classList.add('active');
+            });
+        });
+
+        /* ── Form submissions ── */
+        async function submitBS() {
+            const name = document.getElementById('bs-name').value.trim();
+            const contact = document.getElementById('bs-contact').value.trim();
+            const msg = document.getElementById('bs-msg').value.trim();
+            const qty = document.getElementById('qty-input').value.trim();
+
+            if (!name || !contact) { alert('Please enter your name and contact detail.'); return; }
+
+            const btnTxt = document.getElementById('bs-btn-txt');
+            const origTxt = btnTxt.textContent;
+            btnTxt.textContent = 'Sending...';
+
+            try {
+                const payload = {
+                    formSource: 'Unlisted Shares Transaction',
+                    transactionType: bsMode,
+                    company: co.name,
+                    quantityInLots: qty,
+                    fullName: name,
+                    contactDetails: contact,
+                    message: msg
+                };
+                const res = await fetch('/send-email', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (!res.ok) throw new Error('Failed');
+
+                document.getElementById('success-title').textContent = bsMode === 'buy' ? 'Buy Request Sent' : 'Sell Request Sent';
+                document.getElementById('success-msg').textContent = `An AKMAY advisor will contact you within one business day to process your ${bsMode} request for ${co.name}.`;
+                document.getElementById('success-overlay').classList.add('show');
+                document.getElementById('bs-name').value = '';
+                document.getElementById('bs-contact').value = '';
+                document.getElementById('bs-msg').value = '';
+                document.getElementById('qty-input').value = '1';
+                calcBSValues();
+            } catch (err) {
+                alert('An error occurred. Please try again.');
+            } finally {
+                btnTxt.textContent = origTxt;
+            }
+        }
+
+
+        /* ── Scroll & Reveal ── */
+        const nav = document.getElementById('topnav'), fc2 = document.getElementById('float-cta');
+        window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); fc2.classList.toggle('show', window.scrollY > 400); });
+        const rvio = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('up'); rvio.unobserve(x.target); } }); }, { threshold: .1 });
+        document.querySelectorAll('.reveal').forEach(el => rvio.observe(el));
+
+        /* ── Newsletter Subscription ── */
+        const subscribeBtn = document.getElementById('subscribe-btn');
+        const emailInput = document.getElementById('subscriber-email');
+
+        if (subscribeBtn && emailInput) {
+            subscribeBtn.addEventListener('click', async () => {
+                const email = emailInput.value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                if (!email || !emailRegex.test(email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+
+                try {
+                    subscribeBtn.disabled = true;
+                    subscribeBtn.textContent = 'Subscribing...';
+
+                    const response = await fetch('/subscribe', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify({ email })
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok) {
+                        alert(result.message);
+                        emailInput.value = '';
+                    } else {
+                        alert(result.message || "Something went wrong. Please try again.");
+                    }
+                } catch (error) {
+                    console.error("Subscription Error:", error);
+                    alert("Failed to connect to the server. Please check your connection.");
+                } finally {
+                    subscribeBtn.disabled = false;
+                    subscribeBtn.textContent = 'Subscribe';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
