@@ -113,11 +113,7 @@ router.post('/send-email', async (req, res) => {
     pass: process.env.PASSWORD,
   },
 });
-                await transporter.verify();
-    console.log("SMTP verified!");
-  } catch (err) {
-    console.error(err);
-  }
+    
         });
 
         const mailOptions = {
