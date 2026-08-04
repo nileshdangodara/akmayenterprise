@@ -105,13 +105,11 @@ router.post('/send-email', async (req, res) => {
         mailContent += '</ul>';
 
         const transporter = nodemailer.createTransport({
-  host: "smtpout.secureserver.net",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASSWORD,
-  },
+    service: 'gmail',
+            auth: {
+                user: process.env.EMAIL,
+                pass: process.env.PASSWORD
+            }
 });
     
         });
