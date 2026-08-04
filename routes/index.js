@@ -105,11 +105,13 @@ router.post('/send-email', async (req, res) => {
         mailContent += '</ul>';
 
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASSWORD
-            }
+             host: "smtp.titan.email",
+    port: 587,
+    secure: false, // STARTTLS
+    auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
+    }
         });
 
         const mailOptions = {
