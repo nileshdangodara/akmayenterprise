@@ -110,7 +110,7 @@ router.post('/send-email', async (req, res) => {
                 user: process.env.EMAIL,
                 pass: process.env.PASSWORD
             }
-});
+
     
         });
 
