@@ -21,7 +21,7 @@ msgEl.addEventListener('input', () => {
 });
 
 /* ── Checkbox icon ──────────────────────────────── */
-const consent = document.getElementById('consent');
+const consent = document.getElementById('f-consent');
 const checkIcon = document.getElementById('check-icon');
 consent.addEventListener('change', () => {
     checkIcon.style.display = consent.checked ? 'block' : 'none';

@@ -103,15 +103,16 @@ router.post('/send-email', async (req, res) => {
             mailContent += `<li><strong>${formattedKey}:</strong> ${value}</li>`;
         }
         mailContent += '</ul>';
-
         const transporter = nodemailer.createTransport({
-    service: 'gmail',
+
+            host: "smtpout.secureserver.net",
+            port: 465,
+            secure: true,
             auth: {
                 user: process.env.EMAIL,
-                pass: process.env.PASSWORD
-            }
+                pass: process.env.PASSWORD,
+            },
 
-    
         });
 
         const mailOptions = {
